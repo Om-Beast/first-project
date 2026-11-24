@@ -1,0 +1,162 @@
+[
+  {
+    "app_id": 2,
+    "field": "auth",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/changelog/legacy-private-app-creation-sunset",
+    "explanation": "The fresh changelog confirms scoped Service Keys for new internal integrations and continuing legacy tokens; current platform documentation confirms OAuth for apps. Interpret API key here as modern Service Key, not the retired hapikey scheme.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 2,
+    "field": "access",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/developer-platform-basics",
+    "explanation": "Direct onboarding documentation offers a free account and app development. Feature-specific customer subscriptions remain a separate production constraint.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 2,
+    "field": "api",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/developer-platform-basics",
+    "explanation": "The current platform documents public REST APIs and webhooks for CRM/integration workflows.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 2,
+    "field": "mcp",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+    "explanation": "The directly opened vendor page distinguishes a remote CRM read/write MCP from a local developer CLI MCP, matching the record.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 2,
+    "field": "verdict",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/changelog/legacy-private-app-creation-sunset",
+    "explanation": "Free onboarding plus the documented Service Keys path support a prototype buildability inference. The legacy-app creation sunset is correctly dated and does not revoke existing apps today.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 5,
+    "field": "auth",
+    "status": "supported",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx",
+    "explanation": "The new first-party source URL is readable. It documents bearer API keys with role scoping and links OAuth for external apps; the companion MCP source documents OAuth and API-key options.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 5,
+    "field": "access",
+    "status": "supported",
+    "url": "https://twenty.com/pricing",
+    "explanation": "Current pricing offers a no-card Cloud trial; the directly opened API and MCP source docs explicitly include self-hosted base URLs. A self-hosted deployment has operational costs even when no managed subscription is selected.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 5,
+    "field": "api",
+    "status": "supported",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx",
+    "explanation": "The readable first-party file explicitly documents Core records and Metadata schema APIs through both REST and GraphQL, generated from each workspace schema.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 5,
+    "field": "mcp",
+    "status": "supported",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/user-guide/ai/capabilities/mcp.mdx",
+    "explanation": "The new first-party MCP source URL is readable and describes an inbound CRM read/write MCP on Cloud and self-hosted workspace hosts, using OAuth or API keys. This is stronger evidence than the pricing page alone.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 5,
+    "field": "verdict",
+    "status": "supported",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx",
+    "explanation": "Documented API key creation and self-hosted API endpoints support implementation feasibility, conditional on provisioning a workspace. No authenticated instance was tested.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 15,
+    "field": "auth",
+    "status": "contradicted",
+    "url": "https://www.usepylon.com/integrations/mcp",
+    "explanation": "The reviewed auth array contains only token and omits OAuth2 for the official inbound MCP. Both the vendor integration page and the October29 support guide establish OAuth. They conflict about direct-token MCP support: the product page allows it, while https://support.usepylon.com/articles/2407390554-connecting-to-the-pylon-mcp-server says OAuth-only. Keep REST bearer auth separate and mark MCP token support unresolved.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 15,
+    "field": "access",
+    "status": "supported",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "explanation": "Fresh vendor facts state there is no Free plan and prospect trials are set up with sales; customer workspace and token permissions are therefore a valid access classification.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 15,
+    "field": "api",
+    "status": "supported",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+    "explanation": "Direct API docs confirm programmatic read/write support for customers and issues and link reference, SDK, conventions and rate-limit documentation. This supports a broad support-data surface rather than a docs-only connector.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 15,
+    "field": "mcp",
+    "status": "supported",
+    "url": "https://www.usepylon.com/integrations/mcp",
+    "explanation": "A vendor inbound MCP is directly documented for support workspace read/write tools and is listed across paid plans. Official availability is supported; its direct-token authentication has conflicting vendor guidance, recorded separately under auth.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 15,
+    "field": "verdict",
+    "status": "supported",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "explanation": "The outreach route is a reasonable new-developer prioritization inference because trials are sales-assisted. Existing authorized customers can already build; outreach does not mean the API is technically unavailable.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 18,
+    "field": "auth",
+    "status": "supported",
+    "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+    "explanation": "Fresh Inbox docs specify OAuth2 authorization-code/client-credentials flows. The separately reopened Docs API page confirms per-user API-key HTTP Basic auth, matching the record's combined methods.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 18,
+    "field": "access",
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "explanation": "The directly opened support page excludes API/integrations from Free and lists API limits for Standard, Plus and Pro. The record honestly leaves trial entitlement unconfirmed.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 18,
+    "field": "api",
+    "status": "supported",
+    "url": "https://developer.helpscout.com/docs-api/",
+    "explanation": "Fresh Docs API reference confirms REST-style collections/articles resources; the Inbox API reference independently documents conversations/customer/workspace resources.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 18,
+    "field": "mcp",
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+    "explanation": "The directly opened vendor MCP article confirms paid API entitlement and read-only access for newly created connections; beta accounts with retained write tools are an explicit exception.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 18,
+    "field": "verdict",
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "explanation": "A conditional verdict follows documented paid API entitlement. The record also correctly avoids claiming native MCP write support for new connections.",
+    "reviewer": "independent_AI_doc_review"
+  }
+]

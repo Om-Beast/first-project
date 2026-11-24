@@ -1,0 +1,31 @@
+{
+  "reviewer": "AI_document_audit",
+  "checked_at": "2026-11-24",
+  "method": "Fresh opens of the primary pages, separate from the fixed 100-field audit. No human or authenticated runtime test is implied.",
+  "checks": [
+    {
+      "app_id": 4,
+      "app": "Attio",
+      "field": "access",
+      "status": "confirmed",
+      "claim": "Scoped API keys are available on all plans and created by a workspace admin.",
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key"
+    },
+    {
+      "app_id": 13,
+      "app": "Freshdesk",
+      "field": "access",
+      "status": "confirmed",
+      "claim": "The cited rate-limit table lists zero API calls on Free and 50 calls per minute during a trial.",
+      "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk"
+    },
+    {
+      "app_id": 18,
+      "app": "Help Scout",
+      "field": "mcp",
+      "status": "confirmed",
+      "claim": "New MCP connections are read-only and require an API-enabled plan. Some earlier beta accounts retain write tools.",
+      "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server"
+    }
+  ]
+}

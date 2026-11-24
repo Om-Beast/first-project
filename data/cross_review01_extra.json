@@ -1,0 +1,11 @@
+[
+  {
+    "app_id": 12,
+    "field": "access",
+    "status": "supported",
+    "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+    "explanation": "Outside the selected four-app review: direct docs confirm free development workspaces and token issuance through app creation. They are US-only, cannot be converted to production, have no outbound email/push, and cap users/leads. Development-workspace apps cannot be installed into EU/Australia paid workspaces. Thus free is valid for a constrained prototype, not production.",
+    "reviewer": "independent_AI_doc_review",
+    "outside_sample": true
+  }
+]

@@ -1,0 +1,412 @@
+[
+  {
+    "app_id": 65,
+    "field": "auth",
+    "before": [
+      "token",
+      "OAuth2"
+    ],
+    "after": [
+      "token",
+      "OAuth2",
+      "API key",
+      "JWT"
+    ],
+    "status": "corrected",
+    "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+    "explanation": "First pass described the Management API only and omitted project application keys and user JWT authentication. The audit added both without conflating their scopes.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "access",
+    "before": {
+      "value": "free",
+      "detail": "Free projects are available; the Management API supports account-created PATs and OAuth.",
+      "production_gate": "Resource roles and quotas apply; free projects can pause after inactivity."
+    },
+    "after": {
+      "value": "free",
+      "detail": "Free projects are available; the Management API supports account-created PATs and OAuth.",
+      "production_gate": "Resource roles and quotas apply; free projects can pause after inactivity."
+    },
+    "status": "supported",
+    "url": "https://supabase.com/pricing",
+    "explanation": "Free project availability is documented. This is a documentation check; no account was created.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Management plane: organizations, projects and project configuration."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Management plane: organizations and projects. Data plane: generated table/view REST endpoints, database functions, auth and storage."
+    },
+    "status": "corrected",
+    "url": "https://supabase.com/docs/guides/api/creating-routes",
+    "explanation": "The first pass omitted the generated Data API; the audit added table/view REST and function resources.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://supabase.com/features/mcp-server",
+      "note": "Vendor-maintained MCP manages project and database workflows."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://supabase.com/features/mcp-server",
+      "note": "Vendor-maintained MCP manages project and database workflows."
+    },
+    "status": "supported",
+    "url": "https://supabase.com/features/mcp-server",
+    "explanation": "Fresh vendor documentation confirms an official MCP for project and database workflows.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "explanation": "Buildability remains a documentation-based inference from public auth and free projects; credential execution was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "API key",
+      "other"
+    ],
+    "after": [
+      "OAuth2",
+      "API key",
+      "other"
+    ],
+    "status": "supported",
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "explanation": "Fresh docs confirm service-account OAuth and legacy HTTP Digest keys, and distinguish database-user credentials.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "access",
+    "before": {
+      "value": "free",
+      "detail": "Free clusters can be deployed through Atlas UI, CLI or Administration API.",
+      "production_gate": "Organization/project permissions and network access lists apply; managed MCP requires organization enablement."
+    },
+    "after": {
+      "value": "free",
+      "detail": "Free clusters can be deployed through Atlas UI, CLI or Administration API.",
+      "production_gate": "Organization/project permissions and network access lists apply. The AI Clients admin switch gates user-delegated plugin access, not programmatic CLI or Administration API service-account connections."
+    },
+    "status": "corrected",
+    "url": "https://www.mongodb.com/docs/mcp-server/prerequisites/",
+    "explanation": "First pass overgeneralized the AI Clients admin switch. Fresh prerequisites exempt programmatic CLI/Admin API service-account access.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Administration API manages clusters, projects and users; database CRUD uses separate database-user credentials."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Administration API manages clusters, projects and users; database CRUD uses separate database-user credentials."
+    },
+    "status": "supported",
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "explanation": "The Administration API manages deployments and users; it does not return cluster documents. First-pass scope was correct.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222",
+      "note": "Official local and Atlas-managed MCP deployment options are documented."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222",
+      "note": "Official local and Atlas-managed MCP deployment options are documented."
+    },
+    "status": "supported",
+    "url": "https://www.mongodb.com/docs/mcp-server/prerequisites/",
+    "explanation": "Fresh MCP prerequisites establish vendor MCP support and separate delegated plugins from service-account configurations.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+    "explanation": "A free cluster and documented service-account setup support the buildability inference; no live database operation was executed.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "auth",
+    "before": [
+      "token",
+      "OAuth2"
+    ],
+    "after": [
+      "token",
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/9934989703-Creating-personal-access-tokens",
+    "explanation": "Vendor token documentation confirms user-scoped PAT creation; the official MCP guide independently describes OAuth.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "access",
+    "before": {
+      "value": "free",
+      "detail": "Personal access tokens and the official MCP are available on all plans.",
+      "production_gate": "Scopes mirror user permissions; API and MCP quota limits still apply."
+    },
+    "after": {
+      "value": "free",
+      "detail": "Personal access tokens and the official MCP are available on all plans.",
+      "production_gate": "Scopes mirror user permissions; API and MCP quota limits still apply."
+    },
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+    "explanation": "All plans support Web API, with Free subject to monthly call limits. Free is access, not unlimited use.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Bases, schema, records, interfaces and automations through platform tooling."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Bases, schema, records, interfaces and automations through platform tooling."
+    },
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+    "explanation": "The API quickstart confirms record, schema and base operations and pagination.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+      "note": "Hosted vendor MCP supports OAuth and granular tokens."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+      "note": "Hosted vendor MCP supports OAuth and granular tokens."
+    },
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+    "explanation": "A fresh vendor MCP page confirms official support across plans and permissions inherited from the user.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+    "explanation": "A free, scoped-token route supports a toolkit prototype. This was not an authenticated API smoke test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "auth",
+    "before": [
+      "token",
+      "OAuth2"
+    ],
+    "after": [
+      "token",
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "explanation": "Fresh authentication docs confirm bearer access tokens and a separate OAuth consent flow.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "access",
+    "before": {
+      "value": "paid",
+      "detail": "API access requires Business, Enterprise or Advanced Work Management; normal trials cannot generate API tokens.",
+      "production_gate": "An eligible paid plan and matching user permissions are needed."
+    },
+    "after": {
+      "value": "paid",
+      "detail": "API access requires Business, Enterprise or Advanced Work Management; normal trials cannot generate API tokens.",
+      "production_gate": "An eligible paid plan and matching user permissions are needed."
+    },
+    "status": "supported",
+    "url": "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs",
+    "explanation": "The trial FAQ explicitly says trial accounts cannot generate API access tokens, despite trial Business features.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Sheets, rows, folders, reports, users and workspace resources."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Sheets, rows, folders, reports, users and workspace resources."
+    },
+    "status": "supported",
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "explanation": "The current API introduction confirms a documented REST surface for sheets and work resources.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+      "note": "Official MCP requires an eligible plan and region-specific setup."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+      "note": "Official MCP requires an eligible plan and region-specific setup."
+    },
+    "status": "supported",
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+    "explanation": "Fresh installation docs confirm official MCP and the eligible paid plan families.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs",
+    "explanation": "The paid-plan condition is substantiated; no paid account was purchased or used.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 64,
+    "field": "auth",
+    "before": [
+      "token",
+      "API key"
+    ],
+    "after": [
+      "token",
+      "API key",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+    "explanation": "Opportunistic consistency check: first-pass auth array omitted the hosted MCP's OAuth route while describing only REST token/key access.",
+    "reviewer": "AI_document_audit",
+    "sample": false
+  },
+  {
+    "app_id": 66,
+    "field": "auth",
+    "before": [
+      "OAuth2"
+    ],
+    "after": [
+      "OAuth2",
+      "Basic"
+    ],
+    "status": "corrected",
+    "url": "https://neo4j.com/docs/mcp/current/authentication/",
+    "explanation": "Opportunistic consistency check: first pass covered Aura OAuth but missed documented direct-database Basic auth in the MCP.",
+    "reviewer": "AI_document_audit",
+    "sample": false
+  },
+  {
+    "app_id": 70,
+    "field": "auth",
+    "before": [
+      "token"
+    ],
+    "after": [
+      "token",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://mcp.sentry.dev/",
+    "explanation": "Opportunistic consistency check: first-pass auth array omitted official MCP OAuth and captured only REST bearer tokens.",
+    "reviewer": "AI_document_audit",
+    "sample": false
+  }
+]

@@ -1,0 +1,60 @@
+name: Verify and publish Agent Access Atlas
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: agent-access-atlas-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v6
+      - name: Rebuild the preserved research
+        run: python3 -m agent.research --replay
+      - name: Verify research contracts and audit arithmetic
+        run: python3 -m unittest discover -s tests -v
+      - name: Package the inspectable source snapshot
+        run: python3 -m tools.publish_source
+      - name: Upload the Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check the repository's Pages configuration
+        id: configuration
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh api "repos/${GITHUB_REPOSITORY}/pages" --silent; then
+            echo 'enabled=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'enabled=false' >> "$GITHUB_OUTPUT"
+            echo 'Enable GitHub Pages with GitHub Actions as the publishing source, then rerun this workflow.'
+          fi
+      - name: Configure Pages
+        if: steps.configuration.outputs.enabled == 'true'
+        uses: actions/configure-pages@v5
+      - name: Publish the static report
+        if: steps.configuration.outputs.enabled == 'true'
+        id: deployment
+        uses: actions/deploy-pages@v4

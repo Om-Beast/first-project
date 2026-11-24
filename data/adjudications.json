@@ -1,0 +1,69 @@
+[
+  {
+    "app_id": 15,
+    "field": "auth",
+    "before": [
+      "token"
+    ],
+    "after": [
+      "token",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://www.usepylon.com/integrations/mcp",
+    "explanation": "Independent review found the first and second passes omitted OAuth2 on the native MCP. REST uses bearer tokens. Vendor pages conflict on direct-token MCP support, so OAuth is the confirmed common path.",
+    "reviewer": "independent_AI_doc_review",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Management plane: organizations, projects and project configuration."
+    },
+    "after": {
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "broad",
+      "resources": "Management plane: organizations and projects. Data plane: generated table/view REST and GraphQL endpoints, database functions, auth and storage."
+    },
+    "status": "corrected",
+    "url": "https://supabase.com/docs/guides/graphql",
+    "explanation": "Independent review found GraphQL was still missing after the first correction. Project data APIs expose REST and GraphQL; Management API remains a separate surface.",
+    "reviewer": "independent_AI_doc_review",
+    "sample": true
+  },
+  {
+    "app_id": 91,
+    "field": "access",
+    "before": "paid",
+    "after": "trial",
+    "status": "corrected",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+    "explanation": "Independent review found an Enterprise full-feature trial license, so paid-only overstated the initial credential gate. Google Cloud setup, IAM and an active Enterprise license remain required; normal production is paid. Trial duration is inconsistent across vendor pages and is not asserted.",
+    "reviewer": "independent_AI_doc_review",
+    "sample": true
+  },
+  {
+    "app_id": 25,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key",
+      "token"
+    ],
+    "status": "corrected",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+    "explanation": "Cross-review correctly supported the REST/addon key, but final consistency review found native MCP also needs an app key and scoped user/bot token. Token was missing from the app-level method list.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  }
+]

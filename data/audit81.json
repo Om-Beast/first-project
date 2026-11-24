@@ -1,0 +1,327 @@
+[
+  {
+    "app_id": 82,
+    "field": "auth",
+    "before": [
+      "API key",
+      "token"
+    ],
+    "after": [
+      "API key",
+      "token",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://plaid.com/docs/api/oauth/",
+    "explanation": "First pass omitted an official OAuth2 surface. Added OAuth2 for the documented token grants while retaining API-key and Item-token methods; bank-provider OAuth alone would not establish this.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 82,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+    "explanation": "Opened official comparison confirms free mock Sandbox, limited auto-approved US/CA Trial and approval for full Production.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 82,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Auth, transactions, balances, identity, assets, liabilities and investments."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Auth, transactions, balances, identity, assets, liabilities and investments."
+    },
+    "status": "supported",
+    "url": "https://plaid.com/docs/api/",
+    "explanation": "Opened API reference confirms JSON/HTTP product endpoints and a broad financial-data surface; no authenticated endpoint execution occurred.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 82,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://plaid.com/docs/sandbox/",
+      "note": "Official Sandbox MCP is for simulated development, not unrestricted production banking access."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://plaid.com/docs/sandbox/",
+      "note": "Official Sandbox MCP is for simulated development, not unrestricted production banking access."
+    },
+    "status": "supported",
+    "url": "https://plaid.com/docs/sandbox/",
+    "explanation": "Opened Sandbox docs explicitly describe Plaid Sandbox MCP. This does not establish production-bank-data access.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 82,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+    "explanation": "Conditional verdict follows the rubric: development is self-serve; full Production and product/geography access remain gated.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 87,
+    "field": "auth",
+    "before": [
+      "OAuth2"
+    ],
+    "after": [
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developer.xero.com/faq",
+    "explanation": "Fresh official FAQ explicitly requires OAuth2 for new integrations and rejects basic API-key authentication.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 87,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://developer.xero.com/pricing",
+    "explanation": "Opened pricing confirms Starter five-connection allowance, no payment method on Starter and certification requirements at higher tiers; demo-account path corroborated by official FAQ.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 87,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Accounting data, contacts, invoices and other accounting resources."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Accounting data, contacts, invoices and other accounting resources."
+    },
+    "status": "supported",
+    "url": "https://developer.xero.com/documentation/api/accounting/requests-and-responses",
+    "explanation": "Fresh official technical reference documents HTTP resource operations for contacts, invoices and accounting resources.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 87,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "Official account-data MCP ownership and availability not established in first pass."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://api.xero.com/mcp/v1",
+      "note": "Xero-hosted OAuth2/PKCE server; Starter is demo-organisation-only, while real customer organisations need Core or above. No authenticated connection tested."
+    },
+    "status": "corrected",
+    "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+    "explanation": "Resolved previously unknown MCP, not a false negative: official remote OAuth2/PKCE server found. Starter is demo-only, real organisations require Core+. JS-only page extraction is corroborated by opened official pricing.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 87,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://developer.xero.com/pricing",
+    "explanation": "Build verdict is for demo/Starter API development; it does not claim all production scale or paid MCP access is free.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 91,
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "token"
+    ],
+    "after": [
+      "OAuth2",
+      "token"
+    ],
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Opened official API guide requires authenticated user access token; RPC reference supplies OAuth scopes.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 91,
+    "field": "access",
+    "before": "paid",
+    "after": "paid",
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Opened prerequisites explicitly require assigned Gemini Notebook Enterprise user license and notebookLmUser role; also identifies Preview/Pre-GA status.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 91,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "focused",
+      "resources": "Create, retrieve, list, delete and share Enterprise notebooks."
+    },
+    "after": {
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "focused",
+      "resources": "Create, retrieve, list, delete and share Enterprise notebooks."
+    },
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Opened API guide lists create, retrieve, list, delete and share notebook operations. Scope is Enterprise, not personal NotebookLM.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 91,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No official account-data MCP server was verified for this product; API existence alone is not MCP evidence."
+    },
+    "after": {
+      "status": "unknown",
+      "url": null,
+      "note": "No official account-data MCP server was verified for this product; API existence alone is not MCP evidence."
+    },
+    "status": "unresolved",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "No primary NotebookLM-serving MCP claim found. Generic Gemini Enterprise support for connecting to other MCP servers does not resolve this field; unknown is retained, not counted correct or absent.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 91,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Conditional buildability is rubric inference from documented licensed, user-authenticated Preview API; no live credential test was performed.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 93,
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Reopened correct meeting-notetaker vendor source confirms personal API keys plus OAuth apps; unrelated financial-analysis Fathom sources excluded.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 93,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Reopened official page explicitly includes API keys, webhooks and SDKs on every plan including Free; keys require no admin approval.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 93,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Meeting insights and meeting-data workflows with webhooks."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Meeting insights and meeting-data workflows with webhooks."
+    },
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Reopened official source confirms structured meetings, summaries, transcripts, action items, recordings and webhooks.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 93,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://api.fathom.ai/mcp",
+      "note": "Official meeting-notetaker MCP is available on every Fathom plan; unrelated Fathom financial-analytics docs excluded."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://api.fathom.ai/mcp",
+      "note": "Official meeting-notetaker MCP is available on every Fathom plan; unrelated Fathom financial-analytics docs excluded."
+    },
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/mcp-server",
+    "explanation": "Reopened official meeting MCP page identifies api.fathom.ai/mcp and all-plan availability; no authenticated connection executed.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  },
+  {
+    "app_id": 93,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Build verdict follows self-serve user key and documented meeting API; user meeting permissions and rate limits remain constraints.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24"
+  }
+]

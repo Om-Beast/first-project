@@ -1,0 +1,58 @@
+{
+  "apps": 100,
+  "categories": 10,
+  "access": {
+    "free": 48,
+    "trial": 20,
+    "self_hosted": 5,
+    "customer": 8,
+    "paid": 8,
+    "unknown": 6,
+    "approval": 5
+  },
+  "verdict": {
+    "build": 52,
+    "outreach": 11,
+    "conditional": 32,
+    "investigate": 3,
+    "local": 2
+  },
+  "mcp": {
+    "official": 69,
+    "unknown": 25,
+    "community": 5,
+    "not_found": 1
+  },
+  "auth": {
+    "OAuth2": 70,
+    "API key": 48,
+    "token": 42,
+    "Basic": 14,
+    "JWT": 6,
+    "OAuth1": 2,
+    "unknown": 2,
+    "none": 4,
+    "other": 3,
+    "HMAC": 1
+  },
+  "self_serve": 68,
+  "sample_apps": 20,
+  "sample_fields": 100,
+  "supported_before": 81,
+  "supported_after": 96,
+  "changed": 15,
+  "resolved_unknowns": 3,
+  "known_corrections": 12,
+  "unresolved": 4,
+  "extra_checks": 5,
+  "evidence_links": 295,
+  "low_confidence": 3,
+  "primary_blockers": {
+    "Customer tenant or vendor-issued access": 8,
+    "Production authorization, distribution or compliance": 18,
+    "Paid entitlement or licensing": 10,
+    "Unresolved evidence or credential terms": 6,
+    "Local runtime or deployment setup": 4,
+    "Product-surface or trial limits": 2
+  }
+}

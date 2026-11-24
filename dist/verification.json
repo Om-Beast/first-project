@@ -1,0 +1,1761 @@
+[
+  {
+    "app_id": 2,
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "token"
+    ],
+    "after": [
+      "OAuth2",
+      "API key",
+      "token"
+    ],
+    "status": "corrected",
+    "url": "https://developers.hubspot.com/changelog/legacy-private-app-creation-sunset",
+    "explanation": "First pass mentioned Service Keys in prose but omitted API key from the normalized auth array. Fresh changelog review corrected the classification.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 2,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/developer-platform-basics",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 2,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "CRM objects, associations, engagements, marketing objects and webhooks."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "CRM objects, associations, engagements, marketing objects and webhooks."
+    },
+    "status": "supported",
+    "url": "https://developers.hubspot.com/developer-platform-basics",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 2,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+      "note": "Hosted CRM read/write MCP; local developer MCP is a separate surface."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+      "note": "Hosted CRM read/write MCP; local developer MCP is a separate surface."
+    },
+    "status": "supported",
+    "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 2,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/developer-platform-basics",
+    "explanation": "Analyst inference from the documented credential path and API; not a successful authenticated execution test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/user-guide/ai/capabilities/mcp.mdx",
+    "explanation": "First pass captured bearer API keys but omitted OAuth on the native business-data MCP. First-party source docs confirm both paths.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "access",
+    "before": "self_hosted",
+    "after": "self_hosted",
+    "status": "supported",
+    "url": "https://twenty.com/",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "broad",
+      "resources": "CRM records, custom objects, metadata and workflows."
+    },
+    "after": {
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "broad",
+      "resources": "Schema-generated Core record APIs and Metadata schema APIs, each available through REST and GraphQL."
+    },
+    "status": "supported",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx",
+    "explanation": "Fresh first-party source docs support the classification and refine surface detail; the old localized CLI page returned 404 and was replaced.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://twenty.com/pricing?trk=article-ssr-frontend-pulse_little-text-block",
+      "note": "Native MCP is advertised for Cloud workspaces; self-hosted parity is not established here."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://twenty.com/pricing?trk=article-ssr-frontend-pulse_little-text-block",
+      "note": "Native data MCP supports OAuth or a scoped API key; the Cloud workspace supplies the documented endpoint."
+    },
+    "status": "supported",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/user-guide/ai/capabilities/mcp.mdx",
+    "explanation": "Fresh first-party source docs support the classification and refine surface detail; the old localized CLI page returned 404 and was replaced.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://twenty.com/",
+    "explanation": "Analyst inference from the documented credential path and API; not a successful authenticated execution test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "auth",
+    "before": [
+      "token"
+    ],
+    "after": [
+      "token",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://www.usepylon.com/integrations/mcp",
+    "explanation": "Independent review found the first and second passes omitted OAuth2 on the native MCP. REST uses bearer tokens. Vendor pages conflict on direct-token MCP support, so OAuth is the confirmed common path.",
+    "reviewer": "AI_document_audit",
+    "sample": true,
+    "followup_adjudicated": true
+  },
+  {
+    "app_id": 15,
+    "field": "access",
+    "before": "customer",
+    "after": "customer",
+    "status": "supported",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Issues, customers, accounts, users and operational support data."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Issues, customers, accounts, users and operational support data."
+    },
+    "status": "supported",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://www.usepylon.com/pylon-facts",
+      "note": "Vendor documents Pylon MCP on every plan; separate from outbound MCP connectors."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://www.usepylon.com/pylon-facts",
+      "note": "Vendor documents Pylon MCP on every plan; separate from outbound MCP connectors."
+    },
+    "status": "supported",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "verdict",
+    "before": "outreach",
+    "after": "outreach",
+    "status": "supported",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "explanation": "Analyst inference from the documented credential path and API; not a successful authenticated execution test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "API key",
+      "Basic"
+    ],
+    "after": [
+      "OAuth2",
+      "API key",
+      "Basic"
+    ],
+    "status": "supported",
+    "url": "https://developer.helpscout.com/docs-api/",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "access",
+    "before": "paid",
+    "after": "paid",
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Conversations, customers, mailboxes, users, Docs collections and articles."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Conversations, customers, mailboxes, users, Docs collections and articles."
+    },
+    "status": "supported",
+    "url": "https://developer.helpscout.com/docs-api/",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+      "note": "Official MCP is read-only for new connections; plans require API entitlement."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+      "note": "Official MCP is read-only for new connections; plans require API entitlement."
+    },
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "explanation": "Analyst inference from the documented credential path and API; not a successful authenticated execution test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 16,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key",
+      "OAuth2",
+      "token"
+    ],
+    "status": "corrected",
+    "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents?r=1",
+    "explanation": "Final consistency review included native MCP authentication alongside the API credential method, with its separate scope preserved.",
+    "reviewer": "AI_document_audit",
+    "sample": false
+  },
+  {
+    "app_id": 17,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+    "explanation": "Final consistency review included native MCP authentication alongside the API credential method, with its separate scope preserved.",
+    "reviewer": "AI_document_audit",
+    "sample": false
+  },
+  {
+    "app_id": 25,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key",
+      "token"
+    ],
+    "status": "corrected",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+    "explanation": "Cross-review correctly supported the REST/addon key, but final consistency review found native MCP also needs an app key and scoped user/bot token. Token was missing from the app-level method list.",
+    "reviewer": "AI_document_audit",
+    "sample": true,
+    "followup_adjudicated": true
+  },
+  {
+    "app_id": 25,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "explanation": "Opened all-plan availability statement confirms free-plan eligibility; addon install permissions still matter.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 25,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "HTTP"
+      ],
+      "breadth": "focused",
+      "resources": "Send/reply/delete messages, reactions, channels and channel message listing."
+    },
+    "after": {
+      "protocols": [
+        "HTTP"
+      ],
+      "breadth": "focused",
+      "resources": "Send/reply/delete messages, reactions, channels and channel message listing."
+    },
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "explanation": "Opened action list confirms focused HTTP messaging/channel surface.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 25,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+      "note": "Vendor guide describes a Pumble MCP server; API scope is narrower than full chat UI."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+      "note": "Vendor guide describes a Pumble MCP server; API scope is narrower than full chat UI."
+    },
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+    "explanation": "Fresh official setup guide confirms an action-capable MCP; MCP credentials differ from the API-key addon.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 25,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "explanation": "Documented all-plan credentials and callable operations support a build assessment; no authenticated execution was attempted.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 28,
+    "field": "auth",
+    "before": [
+      "token"
+    ],
+    "after": [
+      "token"
+    ],
+    "status": "supported",
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "explanation": "Opened quickstart confirms temporary and system-user Bearer access tokens.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 28,
+    "field": "access",
+    "before": "unknown",
+    "after": "unknown",
+    "status": "unresolved",
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "explanation": "Self-serve token onboarding was established, but explicit free/trial cost terms were not. Unknown is retained rather than labelled incorrect.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 28,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messages, templates, business accounts and phone numbers."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messages, templates, business accounts and phone numbers."
+    },
+    "status": "supported",
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "explanation": "Opened messaging, templates, webhook and phone/account setup guide supports the documented API surface.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 28,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No conclusive official MCP evidence captured in this scoped pass; not a claim of absence."
+    },
+    "after": {
+      "status": "community",
+      "url": "https://github.com/saravanaspar/WBMCP",
+      "note": "Community wrapper targets the official WhatsApp Business Cloud API; it is not a Meta-authored or runtime-verified MCP server."
+    },
+    "status": "corrected",
+    "url": "https://github.com/saravanaspar/WBMCP",
+    "explanation": "Resolved unknown, not an initial factual error: a fresh repository search and opened developer README found a community WhatsApp Business Cloud API MCP. Official vendor-server availability remains unestablished.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 28,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://developers.facebook.com/docs/whatsapp/solution-providers/app-review/sample-submission/",
+    "explanation": "Reviewed permissions are required for solution providers serving other businesses, supporting a conditional verdict.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 31,
+    "field": "auth",
+    "before": [
+      "OAuth2"
+    ],
+    "after": [
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "explanation": "Fresh body text confirms the 2026 developer-token sunset. First pass already used current OAuth/Cloud-project onboarding.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 31,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "explanation": "Enabling the API grants Test access; production project access follows separate levels and approval.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 31,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Campaigns, ad groups, ads, reporting, audiences and keyword planning."
+    },
+    "after": {
+      "protocols": [
+        "REST",
+        "gRPC"
+      ],
+      "breadth": "broad",
+      "resources": "Campaigns, ad groups, ads, reporting, audiences and keyword planning."
+    },
+    "status": "corrected",
+    "url": "https://developers.google.com/google-ads/api/rest/overview",
+    "explanation": "First pass captured REST only; the official interface overview explicitly supports gRPC as well.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 31,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "note": "Google documents an open-source MCP server; official documentation does not imply support guarantees for every tool."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "note": "Google documents an open-source MCP server; official documentation does not imply support guarantees for every tool."
+    },
+    "status": "supported",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "explanation": "Opened vendor guide confirms MCP, transports, authentication and partial-write limits.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 31,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "explanation": "Test-only access does not establish production eligibility, so conditional remains appropriate.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 35,
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2"
+    ],
+    "after": [
+      "API key",
+      "OAuth2",
+      "Basic"
+    ],
+    "status": "corrected",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+    "explanation": "First pass listed credential types but omitted supported HTTP Basic transport; Basic is now included.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 35,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://mailchimp.com/help/about-mailchimp-pricing-plans/?linkedin_auth_error=user_cancelled_login",
+    "explanation": "Free plan existence plus API account/key onboarding supports free entry, subject to feature limits.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 35,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Audiences, campaigns, activity, reports and batch operations."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Audiences, campaigns, activity, reports and batch operations."
+    },
+    "status": "supported",
+    "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+    "explanation": "Opened guide confirms audience/campaign data and analytics API use.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 35,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "note": "Official MCP searches documentation only; it cannot access or act on a Mailchimp account."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "note": "Official MCP searches documentation only; it cannot access or act on a Mailchimp account."
+    },
+    "status": "supported",
+    "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+    "explanation": "Opened page explicitly limits MCP to documentation search, matching the scoped first-pass claim.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 35,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+    "explanation": "Private-account key and third-party OAuth paths support implementation; docs MCP is not counted as account integration.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 46,
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developers.squarespace.com/commerce-apis/v2/products",
+    "explanation": "The API accepts API keys or OAuth tokens.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 46,
+    "field": "access",
+    "before": "paid",
+    "after": "paid",
+    "status": "supported",
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "explanation": "Paid plan-specific key access is supported; plan names differ for legacy and current subscriptions.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 46,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Products, orders, inventory and transactions."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Products, orders, inventory and transactions."
+    },
+    "status": "supported",
+    "url": "https://developers.squarespace.com/commerce-apis/v2/products",
+    "explanation": "Public commerce REST endpoint documentation supports the stated surface.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 46,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://developers.squarespace.com/mcp/overview",
+      "note": "Official remote MCP; unauthenticated domains tools and signed-in Commerce tools. Commerce is currently limited to Claude and ChatGPT, and orders are read-only."
+    },
+    "status": "corrected",
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "explanation": "A targeted second pass resolved first-pass unknown to an official remote MCP; this is a coverage improvement, not a false negative.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 46,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "explanation": "Conditional buildability follows from paid resource entitlement; official MCP supplies an additional integration path.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 49,
+    "field": "auth",
+    "before": [
+      "OAuth2"
+    ],
+    "after": [
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+    "explanation": "LWA OAuth2 for public apps and self-authorization for private apps are documented.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 49,
+    "field": "access",
+    "before": "approval",
+    "after": "approval",
+    "status": "supported",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer",
+    "explanation": "Developer-profile review confirms the approval gate; public and private app requirements differ.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 49,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Orders, shipments, selling operations and payment-related reports."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Orders, shipments, selling operations and payment-related reports."
+    },
+    "status": "supported",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+    "explanation": "Official docs describe REST-based selling operations APIs.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 49,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "after": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "status": "unresolved",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+    "explanation": "Targeted official-source search did not establish an operational MCP server; unknown remains and is not a claim of absence.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 49,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+    "explanation": "The conditional verdict is a rubric-based inference from registration, roles and authorization requirements.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 53,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key"
+    ],
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+    "explanation": "The API reference specifies a Bearer API key managed by owners or admins.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 53,
+    "field": "access",
+    "before": "paid",
+    "after": "paid",
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/api/reference/public/post-domain-rating-free",
+    "explanation": "The first-pass distinction stands: free key and limited public endpoint, paid core data.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 53,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "SEO analytics plus a limited public domain-rating endpoint."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "SEO analytics plus a limited public domain-rating endpoint."
+    },
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "explanation": "Core SEO endpoint families support broad REST coverage.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 53,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+      "note": "Official hosted MCP shares paid API access and limits."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+      "note": "Official hosted MCP shares paid API access and limits."
+    },
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+    "explanation": "Official hosted MCP and its Lite+ entitlement are directly documented.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 53,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "explanation": "Conditional reflects required core-data entitlement rather than credential issuance alone.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 59,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key"
+    ],
+    "status": "supported",
+    "url": "https://docs.waterfall.io/v1/authentication",
+    "explanation": "API-key auth stands; implementation should use the reference’s x-api-key header, rather than the differently named homepage example.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 59,
+    "field": "access",
+    "before": "approval",
+    "after": "approval",
+    "status": "supported",
+    "url": "https://docs.waterfall.io/v1/quickstart",
+    "explanation": "The quickstart explicitly directs developers to contact the team for access and pricing.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 59,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Prospecting, contact enrichment and job-change endpoints."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Prospector, contact/company search and enrichment, phone enrichment, job changes, email verification and account/key-management endpoints; many operations are asynchronous."
+    },
+    "status": "corrected",
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "explanation": "Following the documentation link expanded the first-pass surface: focused was too narrow for the documented search, enrichment, verification and account families.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 59,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "after": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "status": "unresolved",
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "explanation": "Official Agent Skills are linked, but they do not prove an MCP server. The first-pass unknown remains.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 59,
+    "field": "verdict",
+    "before": "outreach",
+    "after": "outreach",
+    "status": "supported",
+    "url": "https://docs.waterfall.io/v1/authentication",
+    "explanation": "Outreach follows from the explicitly vendor-issued access path.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "auth",
+    "before": [
+      "token",
+      "OAuth2"
+    ],
+    "after": [
+      "token",
+      "OAuth2",
+      "API key",
+      "JWT"
+    ],
+    "status": "corrected",
+    "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+    "explanation": "First pass described the Management API only and omitted project application keys and user JWT authentication. The audit added both without conflating their scopes.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "access",
+    "before": {
+      "value": "free",
+      "detail": "Free projects are available; the Management API supports account-created PATs and OAuth.",
+      "production_gate": "Resource roles and quotas apply; free projects can pause after inactivity."
+    },
+    "after": {
+      "value": "free",
+      "detail": "Free projects are available; the Management API supports account-created PATs and OAuth.",
+      "production_gate": "Resource roles and quotas apply; free projects can pause after inactivity."
+    },
+    "status": "supported",
+    "url": "https://supabase.com/pricing",
+    "explanation": "Free project availability is documented. This is a documentation check; no account was created.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Management plane: organizations, projects and project configuration."
+    },
+    "after": {
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "broad",
+      "resources": "Management plane: organizations and projects. Data plane: generated table/view REST and GraphQL endpoints, database functions, auth and storage."
+    },
+    "status": "corrected",
+    "url": "https://supabase.com/docs/guides/graphql",
+    "explanation": "Independent review found GraphQL was still missing after the first correction. Project data APIs expose REST and GraphQL; Management API remains a separate surface.",
+    "reviewer": "AI_document_audit",
+    "sample": true,
+    "followup_adjudicated": true
+  },
+  {
+    "app_id": 65,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://supabase.com/features/mcp-server",
+      "note": "Vendor-maintained MCP manages project and database workflows."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://supabase.com/features/mcp-server",
+      "note": "Vendor-maintained MCP manages project and database workflows."
+    },
+    "status": "supported",
+    "url": "https://supabase.com/features/mcp-server",
+    "explanation": "Fresh vendor documentation confirms an official MCP for project and database workflows.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 65,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://supabase.com/docs/reference/api/introduction",
+    "explanation": "Buildability remains a documentation-based inference from public auth and free projects; credential execution was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "API key",
+      "other"
+    ],
+    "after": [
+      "OAuth2",
+      "API key",
+      "other"
+    ],
+    "status": "supported",
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "explanation": "Fresh docs confirm service-account OAuth and legacy HTTP Digest keys, and distinguish database-user credentials.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "access",
+    "before": {
+      "value": "free",
+      "detail": "Free clusters can be deployed through Atlas UI, CLI or Administration API.",
+      "production_gate": "Organization/project permissions and network access lists apply; managed MCP requires organization enablement."
+    },
+    "after": {
+      "value": "free",
+      "detail": "Free clusters can be deployed through Atlas UI, CLI or Administration API.",
+      "production_gate": "Organization/project permissions and network access lists apply. The AI Clients admin switch gates user-delegated plugin access, not programmatic CLI or Administration API service-account connections."
+    },
+    "status": "corrected",
+    "url": "https://www.mongodb.com/docs/mcp-server/prerequisites/",
+    "explanation": "First pass overgeneralized the AI Clients admin switch. Fresh prerequisites exempt programmatic CLI/Admin API service-account access.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Administration API manages clusters, projects and users; database CRUD uses separate database-user credentials."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Administration API manages clusters, projects and users; database CRUD uses separate database-user credentials."
+    },
+    "status": "supported",
+    "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+    "explanation": "The Administration API manages deployments and users; it does not return cluster documents. First-pass scope was correct.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222",
+      "note": "Official local and Atlas-managed MCP deployment options are documented."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222",
+      "note": "Official local and Atlas-managed MCP deployment options are documented."
+    },
+    "status": "supported",
+    "url": "https://www.mongodb.com/docs/mcp-server/prerequisites/",
+    "explanation": "Fresh MCP prerequisites establish vendor MCP support and separate delegated plugins from service-account configurations.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 68,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+    "explanation": "A free cluster and documented service-account setup support the buildability inference; no live database operation was executed.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "auth",
+    "before": [
+      "token",
+      "OAuth2"
+    ],
+    "after": [
+      "token",
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/9934989703-Creating-personal-access-tokens",
+    "explanation": "Vendor token documentation confirms user-scoped PAT creation; the official MCP guide independently describes OAuth.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "access",
+    "before": {
+      "value": "free",
+      "detail": "Personal access tokens and the official MCP are available on all plans.",
+      "production_gate": "Scopes mirror user permissions; API and MCP quota limits still apply."
+    },
+    "after": {
+      "value": "free",
+      "detail": "Personal access tokens and the official MCP are available on all plans.",
+      "production_gate": "Scopes mirror user permissions; API and MCP quota limits still apply."
+    },
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+    "explanation": "All plans support Web API, with Free subject to monthly call limits. Free is access, not unlimited use.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Bases, schema, records, interfaces and automations through platform tooling."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Bases, schema, records, interfaces and automations through platform tooling."
+    },
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+    "explanation": "The API quickstart confirms record, schema and base operations and pagination.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+      "note": "Hosted vendor MCP supports OAuth and granular tokens."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+      "note": "Hosted vendor MCP supports OAuth and granular tokens."
+    },
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+    "explanation": "A fresh vendor MCP page confirms official support across plans and permissions inherited from the user.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 72,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://support.airtable.com/articles/6292134965-getting-started-with-airtable-s-web-api",
+    "explanation": "A free, scoped-token route supports a toolkit prototype. This was not an authenticated API smoke test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "auth",
+    "before": [
+      "token",
+      "OAuth2"
+    ],
+    "after": [
+      "token",
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+    "explanation": "Fresh authentication docs confirm bearer access tokens and a separate OAuth consent flow.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "access",
+    "before": {
+      "value": "paid",
+      "detail": "API access requires Business, Enterprise or Advanced Work Management; normal trials cannot generate API tokens.",
+      "production_gate": "An eligible paid plan and matching user permissions are needed."
+    },
+    "after": {
+      "value": "paid",
+      "detail": "API access requires Business, Enterprise or Advanced Work Management; normal trials cannot generate API tokens.",
+      "production_gate": "An eligible paid plan and matching user permissions are needed."
+    },
+    "status": "supported",
+    "url": "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs",
+    "explanation": "The trial FAQ explicitly says trial accounts cannot generate API access tokens, despite trial Business features.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Sheets, rows, folders, reports, users and workspace resources."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Sheets, rows, folders, reports, users and workspace resources."
+    },
+    "status": "supported",
+    "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+    "explanation": "The current API introduction confirms a documented REST surface for sheets and work resources.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+      "note": "Official MCP requires an eligible plan and region-specific setup."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+      "note": "Official MCP requires an eligible plan and region-specific setup."
+    },
+    "status": "supported",
+    "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+    "explanation": "Fresh installation docs confirm official MCP and the eligible paid plan families.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 79,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs",
+    "explanation": "The paid-plan condition is substantiated; no paid account was purchased or used.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 64,
+    "field": "auth",
+    "before": [
+      "token",
+      "API key"
+    ],
+    "after": [
+      "token",
+      "API key",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+    "explanation": "Opportunistic consistency check: first-pass auth array omitted the hosted MCP's OAuth route while describing only REST token/key access.",
+    "reviewer": "AI_document_audit",
+    "sample": false
+  },
+  {
+    "app_id": 66,
+    "field": "auth",
+    "before": [
+      "OAuth2"
+    ],
+    "after": [
+      "OAuth2",
+      "Basic"
+    ],
+    "status": "corrected",
+    "url": "https://neo4j.com/docs/mcp/current/authentication/",
+    "explanation": "Opportunistic consistency check: first pass covered Aura OAuth but missed documented direct-database Basic auth in the MCP.",
+    "reviewer": "AI_document_audit",
+    "sample": false
+  },
+  {
+    "app_id": 70,
+    "field": "auth",
+    "before": [
+      "token"
+    ],
+    "after": [
+      "token",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://mcp.sentry.dev/",
+    "explanation": "Opportunistic consistency check: first-pass auth array omitted official MCP OAuth and captured only REST bearer tokens.",
+    "reviewer": "AI_document_audit",
+    "sample": false
+  },
+  {
+    "app_id": 82,
+    "field": "auth",
+    "before": [
+      "API key",
+      "token"
+    ],
+    "after": [
+      "API key",
+      "token",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://plaid.com/docs/api/oauth/",
+    "explanation": "First pass omitted an official OAuth2 surface. Added OAuth2 for the documented token grants while retaining API-key and Item-token methods; bank-provider OAuth alone would not establish this.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 82,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+    "explanation": "Opened official comparison confirms free mock Sandbox, limited auto-approved US/CA Trial and approval for full Production.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 82,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Auth, transactions, balances, identity, assets, liabilities and investments."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Auth, transactions, balances, identity, assets, liabilities and investments."
+    },
+    "status": "supported",
+    "url": "https://plaid.com/docs/api/",
+    "explanation": "Opened API reference confirms JSON/HTTP product endpoints and a broad financial-data surface; no authenticated endpoint execution occurred.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 82,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://plaid.com/docs/sandbox/",
+      "note": "Official Sandbox MCP is for simulated development, not unrestricted production banking access."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://plaid.com/docs/sandbox/",
+      "note": "Official Sandbox MCP is for simulated development, not unrestricted production banking access."
+    },
+    "status": "supported",
+    "url": "https://plaid.com/docs/sandbox/",
+    "explanation": "Opened Sandbox docs explicitly describe Plaid Sandbox MCP. This does not establish production-bank-data access.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 82,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+    "explanation": "Conditional verdict follows the rubric: development is self-serve; full Production and product/geography access remain gated.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 87,
+    "field": "auth",
+    "before": [
+      "OAuth2"
+    ],
+    "after": [
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developer.xero.com/faq",
+    "explanation": "Fresh official FAQ explicitly requires OAuth2 for new integrations and rejects basic API-key authentication.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 87,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://developer.xero.com/pricing",
+    "explanation": "Opened pricing confirms Starter five-connection allowance, no payment method on Starter and certification requirements at higher tiers; demo-account path corroborated by official FAQ.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 87,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Accounting data, contacts, invoices and other accounting resources."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Accounting data, contacts, invoices and other accounting resources."
+    },
+    "status": "supported",
+    "url": "https://developer.xero.com/documentation/api/accounting/requests-and-responses",
+    "explanation": "Fresh official technical reference documents HTTP resource operations for contacts, invoices and accounting resources.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 87,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "Official account-data MCP ownership and availability not established in first pass."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://api.xero.com/mcp/v1",
+      "note": "Xero-hosted OAuth2/PKCE server; Starter is demo-organisation-only, while real customer organisations need Core or above. No authenticated connection tested."
+    },
+    "status": "corrected",
+    "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+    "explanation": "Resolved previously unknown MCP, not a false negative: official remote OAuth2/PKCE server found. Starter is demo-only, real organisations require Core+. JS-only page extraction is corroborated by opened official pricing.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 87,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://developer.xero.com/pricing",
+    "explanation": "Build verdict is for demo/Starter API development; it does not claim all production scale or paid MCP access is free.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 91,
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "token"
+    ],
+    "after": [
+      "OAuth2",
+      "token"
+    ],
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Opened official API guide requires authenticated user access token; RPC reference supplies OAuth scopes.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 91,
+    "field": "access",
+    "before": "paid",
+    "after": "trial",
+    "status": "corrected",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+    "explanation": "Independent review found an Enterprise full-feature trial license, so paid-only overstated the initial credential gate. Google Cloud setup, IAM and an active Enterprise license remain required; normal production is paid. Trial duration is inconsistent across vendor pages and is not asserted.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true,
+    "followup_adjudicated": true
+  },
+  {
+    "app_id": 91,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "focused",
+      "resources": "Create, retrieve, list, delete and share Enterprise notebooks."
+    },
+    "after": {
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "focused",
+      "resources": "Create, retrieve, list, delete and share Enterprise notebooks."
+    },
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Opened API guide lists create, retrieve, list, delete and share notebook operations. Scope is Enterprise, not personal NotebookLM.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 91,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No official account-data MCP server was verified for this product; API existence alone is not MCP evidence."
+    },
+    "after": {
+      "status": "unknown",
+      "url": null,
+      "note": "No official account-data MCP server was verified for this product; API existence alone is not MCP evidence."
+    },
+    "status": "unresolved",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "No primary NotebookLM-serving MCP claim found. Generic Gemini Enterprise support for connecting to other MCP servers does not resolve this field; unknown is retained, not counted correct or absent.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 91,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Conditional buildability is rubric inference from documented licensed, user-authenticated Preview API; no live credential test was performed.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 93,
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Reopened correct meeting-notetaker vendor source confirms personal API keys plus OAuth apps; unrelated financial-analysis Fathom sources excluded.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 93,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Reopened official page explicitly includes API keys, webhooks and SDKs on every plan including Free; keys require no admin approval.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 93,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Meeting insights and meeting-data workflows with webhooks."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Meeting insights and meeting-data workflows with webhooks."
+    },
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Reopened official source confirms structured meetings, summaries, transcripts, action items, recordings and webhooks.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 93,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://api.fathom.ai/mcp",
+      "note": "Official meeting-notetaker MCP is available on every Fathom plan; unrelated Fathom financial-analytics docs excluded."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://api.fathom.ai/mcp",
+      "note": "Official meeting-notetaker MCP is available on every Fathom plan; unrelated Fathom financial-analytics docs excluded."
+    },
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/mcp-server",
+    "explanation": "Reopened official meeting MCP page identifies api.fathom.ai/mcp and all-plan availability; no authenticated connection executed.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  },
+  {
+    "app_id": 93,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Build verdict follows self-serve user key and documented meeting API; user meeting permissions and rate limits remain constraints.",
+    "reviewer": "AI_document_audit",
+    "checked_at": "2026-11-24",
+    "sample": true
+  }
+]

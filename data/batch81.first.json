@@ -1,0 +1,1150 @@
+[
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "summary": "Payments, billing and financial infrastructure.",
+    "auth": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "Sandbox keys allow development with simulated payments; live mode has separate keys.",
+    "production_gate": "Live payment activation, account verification and regional availability are separate from sandbox credentials.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Customers, payments, refunds, subscriptions and account resources."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://mcp.stripe.com",
+      "note": "Official remote server supports OAuth or an agent API key; no authenticated connection tested."
+    },
+    "verdict": "build",
+    "blocker": "No documentation-level blocker for sandbox development.",
+    "next_action": "Start with restricted sandbox keys and read-only customer tools; confirm live activation separately.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://docs.stripe.com/keys",
+        "title": "API keys",
+        "note": "Documents sandbox and live keys, restricted permissions and representative API objects.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "auth",
+          "mcp"
+        ],
+        "url": "https://docs.stripe.com/mcp",
+        "title": "Stripe MCP",
+        "note": "Official server documents OAuth and agent API key setup.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "summary": "Connects applications to bank-account and financial data.",
+    "auth": [
+      "API key",
+      "token"
+    ],
+    "access": "free",
+    "access_detail": "Free Sandbox uses mock data; most new US/CA developers also qualify for a limited auto-approved production Trial.",
+    "production_gate": "Full Production requires company/use-case approval; Trial is geography, signup-date and product limited.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Auth, transactions, balances, identity, assets, liabilities and investments."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://plaid.com/docs/sandbox/",
+      "note": "Official Sandbox MCP is for simulated development, not unrestricted production banking access."
+    },
+    "verdict": "conditional",
+    "blocker": "Production entitlement and product/geography restrictions remain even when Sandbox is self-serve.",
+    "next_action": "Build and test in Sandbox; verify Trial eligibility or request full Production.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://plaid.com/docs/api/",
+        "title": "Plaid API overview",
+        "note": "Most endpoints require client_id and secret; product access also uses access tokens.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+        "title": "Plaid environments and plans",
+        "note": "Separates free Sandbox, limited auto-approved US/CA Trial and approved full Production.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "mcp"
+        ],
+        "url": "https://plaid.com/docs/sandbox/",
+        "title": "Plaid Sandbox overview",
+        "note": "Documents free mock-data environment and official Sandbox MCP.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 83,
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "summary": "Exchange APIs for market data and account/trading workflows.",
+    "auth": [
+      "API key",
+      "HMAC",
+      "other",
+      "none"
+    ],
+    "access": "free",
+    "access_detail": "Public market-data endpoints need no key; private endpoints need account API keys and signing; test environments vary by product.",
+    "production_gate": "Private trading requires enabled account permissions, eligibility and applicable regional/account checks.",
+    "api": {
+      "protocols": [
+        "REST",
+        "WebSocket",
+        "other"
+      ],
+      "breadth": "broad",
+      "resources": "Market data, orders, balances and user streams; product-specific interfaces."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "Official MCP ownership and availability not established in this research pass."
+    },
+    "verdict": "conditional",
+    "blocker": "Regional eligibility, private-account requirements and trading permissions prevent a blanket production-ready claim.",
+    "next_action": "Begin with public market data or the supported testnet; verify private permissions before trading tools.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+        "title": "Binance Spot REST API",
+        "note": "Public security type NONE differs from keyed/signed private endpoints; HMAC, RSA and Ed25519 are supported.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "access"
+        ],
+        "url": "https://developers.binance.com/en/docs/introduction",
+        "title": "Binance developer introduction",
+        "note": "Documents product-specific REST, WebSocket and testing environments.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "summary": "Assignment hint identifies an NMI-powered payments product; exact vendor unresolved.",
+    "auth": [
+      "unknown"
+    ],
+    "access": "unknown",
+    "access_detail": "No primary source was found that unambiguously connects this exact product name with an issuance path.",
+    "production_gate": "Unknown until the product/domain and NMI relationship are confirmed.",
+    "api": {
+      "protocols": [
+        "unknown"
+      ],
+      "breadth": "unknown",
+      "resources": "NMI has documented gateway APIs, but their applicability to this exact product has not been verified."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "NMI's MCP cannot be attributed to this product without a verified identity link."
+    },
+    "verdict": "investigate",
+    "blocker": "Product identity is ambiguous; similarly named Paygent card/crypto products are not interchangeable.",
+    "next_action": "Ask for the precise vendor URL or an NMI merchant-portal reference before making integration commitments.",
+    "confidence": "low",
+    "evidence": [
+      {
+        "fields": [
+          "verdict"
+        ],
+        "url": "https://docs.nmi.com/reference/authentication",
+        "title": "NMI authentication (context only)",
+        "note": "NMI documents merchant/partner security keys; this is not evidence that an identified Paygent Connect tenant can issue them.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "verdict"
+        ],
+        "url": "https://api.paygent.tech/docs",
+        "title": "Different Paygent product (identity warning)",
+        "note": "A similarly named service describes on-chain-funded virtual cards; no verified NMI relationship was found.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "summary": "FX transaction auditing and bank-spread analysis.",
+    "auth": [
+      "API key"
+    ],
+    "access": "unknown",
+    "access_detail": "Official indexed pages describe dashboard Bearer keys but disagree about free limits, paid plans and API base URLs; current page extraction is incomplete.",
+    "production_gate": "Confirm current credential entitlement and API route with the vendor; do not infer a free tier from conflicting pages.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Transaction audits, rates and document auditing; exact current route/version needs confirmation."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://www.ipayx.ai/docs/mcp-server",
+      "note": "Official indexed MCP documentation exists; deployment and current access/pricing were not authenticated or tested."
+    },
+    "verdict": "investigate",
+    "blocker": "Contradictory official documentation prevents a reliable current access verdict.",
+    "next_action": "Reconcile API base URL, free quota and billing terms with vendor before implementing.",
+    "confidence": "low",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://www.ipayx.ai/docs/api",
+        "title": "iPayX FX Audit API",
+        "note": "Indexed docs describe Bearer keys and audit/rates/document endpoints; direct extraction returned generic product text.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://www.ipayx.ai/developers",
+        "title": "iPayX developer documentation",
+        "note": "Describes dashboard keys and paid developer tiers; conflicts with other official quotas/routes.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp",
+          "access",
+          "verdict"
+        ],
+        "url": "https://www.ipayx.ai/docs/mcp-server",
+        "title": "iPayX MCP documentation",
+        "note": "Documents MCP and a free daily quota, inconsistent with the developer pricing page.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "summary": "Small-business accounting, invoicing and financial records.",
+    "auth": [
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "Intuit provides separate Development credentials for sandbox companies.",
+    "production_gate": "Production credentials require a completed and approved Production Key questionnaire; distribution has additional assessment requirements.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Accounting entities including customers, invoices and payments."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "Official production-data MCP availability not established; do not confuse third-party wrappers with Intuit ownership."
+    },
+    "verdict": "conditional",
+    "blocker": "Production credential approval is separate from free sandbox development.",
+    "next_action": "Prototype accounting read tools in Sandbox and complete production compliance requirements.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+        "title": "QuickBooks OAuth 2.0",
+        "note": "Documents OAuth for sandbox and production accounting access.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret",
+        "title": "Get app credentials",
+        "note": "Separates Development and Production credentials; approval questionnaire gates Production keys.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "verdict"
+        ],
+        "url": "https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html",
+        "title": "Publish QuickBooks app",
+        "note": "Documents production compliance assessment; listing is a separate distribution process.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "summary": "Cloud accounting for invoices, contacts and financial operations.",
+    "auth": [
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "Free developer account plus demo company enables testing; Starter supports up to five connections.",
+    "production_gate": "Higher connection/data tiers cost money; certification is a prerequisite for higher tiers, not every initial integration.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Accounting data, contacts, invoices and other accounting resources."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "Official account-data MCP ownership and availability not established in first pass."
+    },
+    "verdict": "build",
+    "blocker": "No documentation-level blocker for demo/Starter development; scaling requires tier review.",
+    "next_action": "Use demo-company OAuth first and size the intended production connection tier.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://developer.xero.com/documentation/getting-started-guide/",
+        "title": "Xero getting started",
+        "note": "Free account, demo company and OAuth app registration are the documented starting path.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://developer.xero.com/pricing",
+        "title": "Xero developer pricing",
+        "note": "Starter permits five connections; certification begins at higher tiers, with tier-specific payment requirements.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "summary": "Corporate spending, cards and financial account management.",
+    "auth": [
+      "token",
+      "OAuth2"
+    ],
+    "access": "customer",
+    "access_detail": "An account/card admin creates a scoped user token from an existing Brex dashboard.",
+    "production_gate": "Active customer account, admin permissions and API agreement required; docs say only Production server, not a public sandbox.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Cards, accounts, users and finance workflows."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "No official MCP ownership claim is made from this search set."
+    },
+    "verdict": "outreach",
+    "blocker": "No documented outsider self-serve sandbox; production credentials depend on an eligible Brex account.",
+    "next_action": "Obtain a customer test account/admin sponsor or ask Brex about partner onboarding.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://developer.brex.com/guides/authentication",
+        "title": "Brex authentication",
+        "note": "User tokens require dashboard admin access; API agreement and production-only server are documented.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "auth",
+          "api"
+        ],
+        "url": "https://developer.brex.com/docs/faq",
+        "title": "Brex API FAQ",
+        "note": "Distinguishes own-account user tokens from partner OAuth and references card/account endpoints.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "summary": "Spend management, company cards and finance automation.",
+    "auth": [
+      "OAuth2"
+    ],
+    "access": "customer",
+    "access_detail": "Customer admins create developer apps; a separate sandbox can be requested.",
+    "production_gate": "Existing customer admin access or approved sandbox request; roles also control access to AI tools.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Transactions, accounting data, cards and spend-management workflows."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://mcp.ramp.com/mcp",
+      "note": "Official OAuth MCP supports read-only/full access within the signed-in user's role."
+    },
+    "verdict": "outreach",
+    "blocker": "Outside developers need a customer sponsor or requested sandbox access.",
+    "next_action": "Request sandbox access, then prototype read-only transaction tools.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://docs.ramp.com/developer-api/v1/authorization",
+        "title": "Ramp authorization",
+        "note": "Documents OAuth grant types and scopes, including role-based MCP authorization.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://docs.ramp.com/developer-api/v1/guides/getting-started",
+        "title": "Ramp quickstart",
+        "note": "Assumes customer admin access and directs developers to request a sandbox.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+        "title": "Ramp MCP",
+        "note": "Official remote server, OAuth connection and role/access-level constraints.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "summary": "Private-market company, deal and investment intelligence.",
+    "auth": [
+      "API key",
+      "token"
+    ],
+    "access": "customer",
+    "access_detail": "API is a separately contracted product; Direct Data team establishes the connection.",
+    "production_gate": "Standalone API contract and vendor-assisted access; sandbox is arranged via Direct Data/account manager.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Companies, financing, deals and other private-market entity datasets."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "Official MCP availability not established; third-party finance aggregators are not proof."
+    },
+    "verdict": "outreach",
+    "blocker": "Licensing and vendor provisioning gate credentials and permitted data.",
+    "next_action": "Contact Direct Data with intended entities, licensing needs and sandbox request.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://pitchbook.com/help/PitchBook-api",
+        "title": "PitchBook API",
+        "note": "Official help describes separate contract, REST endpoints and team-provisioned API key/token.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+        "title": "PitchBook Direct Data",
+        "note": "Sandbox access is arranged through the Direct Data team.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "summary": "Google notebook research and source-grounded document insights; Enterprise API scope.",
+    "auth": [
+      "OAuth2",
+      "token"
+    ],
+    "access": "paid",
+    "access_detail": "The documented notebook-management API requires Gemini Notebook Enterprise setup, an assigned user license and IAM role.",
+    "production_gate": "Licensed authenticated user and Cloud project/IAM setup; consumer NotebookLM must not be treated as the same API product.",
+    "api": {
+      "protocols": [
+        "REST",
+        "other"
+      ],
+      "breadth": "focused",
+      "resources": "Create, retrieve, list, delete and share Enterprise notebooks."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "No official account-data MCP server was verified for this product; API existence alone is not MCP evidence."
+    },
+    "verdict": "conditional",
+    "blocker": "Enterprise license and required user IAM permissions gate the documented API.",
+    "next_action": "Confirm Enterprise license and notebookLmUser role; implement notebook-management tools for the documented API.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "title": "Create and manage notebooks API",
+        "note": "Explicitly requires assigned Enterprise license, user IAM role and user access token; lists notebook operations.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth",
+          "api"
+        ],
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha",
+        "title": "NotebookLM Enterprise RPC reference",
+        "note": "Documents OAuth scopes and notebook IAM permissions.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "summary": "Meeting transcription, conversation search and summaries.",
+    "auth": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "paid",
+    "access_detail": "Public REST API is available to Enterprise workspaces; users create Bearer API keys in Developer settings.",
+    "production_gate": "Enterprise entitlement and possible admin/account-manager enablement for REST; MCP uses separate OAuth user authorization.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Channels, conversations, transcripts, audio, action items, insights and workspace details."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://mcp.otter.ai/mcp",
+      "note": "Official OAuth server provides search/fetch meeting tools; account permissions continue to apply."
+    },
+    "verdict": "conditional",
+    "blocker": "REST API requires Enterprise access; do not assume a free MCP connection grants Enterprise REST credentials.",
+    "next_action": "Choose the needed surface: user-authorized MCP or Enterprise REST API; confirm workspace entitlement.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "title": "Otter public API",
+        "note": "Enterprise REST access, dashboard Bearer keys and supported meeting-data objects.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth",
+          "mcp"
+        ],
+        "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+        "title": "Otter MCP",
+        "note": "Official OAuth-authenticated meeting search/fetch MCP.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "summary": "AI meeting recording, transcripts, summaries and action items.",
+    "auth": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "Per-user API keys, webhooks and SDKs are included on all plans including Free; keys are generated without admin approval.",
+    "production_gate": "API key access is limited to meetings the user can view; customer-distributed apps use OAuth.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Meeting insights and meeting-data workflows with webhooks."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://api.fathom.ai/mcp",
+      "note": "Official meeting-notetaker MCP is available on every Fathom plan; unrelated Fathom financial-analytics docs excluded."
+    },
+    "verdict": "build",
+    "blocker": "No plan gate for personal developer access; permission scope and rate limits still apply.",
+    "next_action": "Start with the user's own meetings and OAuth for a customer-distributed integration.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://www.fathom.ai/features/api",
+        "title": "Fathom meeting API",
+        "note": "Self-generated per-user keys, free-plan inclusion, SDKs and OAuth apps.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "access"
+        ],
+        "url": "https://help.fathom.video/en/articles/8368641",
+        "title": "Fathom public API help",
+        "note": "Per-user meeting permissions and rate limiting; partner OAuth app path.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://www.fathom.ai/features/mcp-server",
+        "title": "Fathom meeting MCP",
+        "note": "Official meeting-context MCP at api.fathom.ai/mcp available on all plans.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "summary": "Searches scientific literature and retrieves academic research.",
+    "auth": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "Self-serve API keys in the account API & MCP dashboard; API and MCP share a subscription quota, with a free allowance described in MCP docs.",
+    "production_gate": "Quota and paid-tier overage limits apply; enterprise/high-volume access is separate.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Academic paper search and research metadata."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://mcp.consensus.app/mcp",
+      "note": "Official remote server supports OAuth clients and Bearer-key configuration; free/no-account modes have different result limits."
+    },
+    "verdict": "build",
+    "blocker": "No general approval gate in current self-serve API help; quota and endpoint limits need implementation.",
+    "next_action": "Create a key in the API & MCP dashboard; enforce shared usage caps and verify the current API reference.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+        "title": "Consensus API (October 2026)",
+        "note": "Documents direct account API access, key creation and shared API/MCP monthly quota.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth",
+          "access",
+          "mcp"
+        ],
+        "url": "https://docs.consensus.app/docs/mcp",
+        "title": "Consensus MCP",
+        "note": "Official OAuth/Bearer MCP with free/no-account and paid usage modes; enterprise access differs.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "summary": "Document parsing, extraction, classification and editing APIs.",
+    "auth": [
+      "API key"
+    ],
+    "access": "trial",
+    "access_detail": "Self-serve Studio signup issues an API key and includes initial free usage credits; continued use is metered.",
+    "production_gate": "Consumption beyond initial credits is paid; advanced deployment and enterprise terms are separate.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Parse, extract, classify, split and edit documents."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://docs.reducto.ai/",
+      "note": "Official docs link agent-ready MCP tooling; no authenticated server capability test was run."
+    },
+    "verdict": "build",
+    "blocker": "No documentation-level gate to credit-backed development; implement consumption controls.",
+    "next_action": "Create a Studio key, parse a test document, and confirm the selected MCP product before connecting.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://reducto.ai/developers",
+        "title": "Reducto developers",
+        "note": "Signup/key quickstart and document-lifecycle endpoints.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://reducto.ai/pricing/",
+        "title": "Reducto pricing",
+        "note": "Initial free usage is followed by standard pay-as-you-go rates.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "mcp"
+        ],
+        "url": "https://docs.reducto.ai/",
+        "title": "Reducto documentation",
+        "note": "Documents REST/SDK surfaces and links official agent MCP tooling.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "summary": "AI software-engineering platform with session and workflow APIs.",
+    "auth": [
+      "API key",
+      "token"
+    ],
+    "access": "unknown",
+    "access_detail": "Service-user keys and personal access tokens are documented; current API entitlement for each self-serve plan was not established.",
+    "production_gate": "Organization roles/service-user provisioning apply; plan entitlement needs confirmation.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Sessions, playbooks, knowledge, repositories, schedules and organization management."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://mcp.devin.ai/mcp",
+      "note": "Official MCP uses Devin keys; org-scoped and enterprise/PAT credentials have different organization-header requirements."
+    },
+    "verdict": "conditional",
+    "blocker": "API/MCP exists but credential entitlement and permissions must be confirmed for the intended plan.",
+    "next_action": "Check the target account's Devin API settings; provision a scoped service user for automation.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "verdict"
+        ],
+        "url": "https://docs.devin.ai/api-reference/authentication",
+        "title": "Devin authentication",
+        "note": "Service-user/PAT bearer model, org roles and provisioning; does not establish every plan's API entitlement.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "api",
+          "summary"
+        ],
+        "url": "https://docs.devin.ai/api-reference/overview",
+        "title": "Devin API overview",
+        "note": "Documented session, context, scheduling and platform API groups.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "auth",
+          "mcp"
+        ],
+        "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+        "title": "Devin MCP",
+        "note": "Official authenticated MCP with repository and full platform-management tools.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "summary": "AI image/video generation through CLI, skills, MCP and a separate API.",
+    "auth": [
+      "token",
+      "API key"
+    ],
+    "access": "paid",
+    "access_detail": "CLI/MCP use browser account sign-in and plan credits; separate developer REST API uses its own key and prepaid balance.",
+    "production_gate": "CLI/MCP do not inherit unlimited/free web generations; REST API billing is a different product.",
+    "api": {
+      "protocols": [
+        "CLI",
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Image/video generation, characters, generation history and media workflows."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://higgsfield.ai/cli",
+      "note": "Vendor documents its own MCP alongside CLI/skills; client authenticates with the Higgsfield account."
+    },
+    "verdict": "conditional",
+    "blocker": "Credits/billing and identity differ by route; public keyless CLI does not mean free generation.",
+    "next_action": "Choose CLI/MCP plan credits or separate API-key billing; test a low-cost generation after confirming credits.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "mcp",
+          "verdict"
+        ],
+        "url": "https://higgsfield.ai/blog/higgsfield-cli",
+        "title": "Higgsfield CLI guide",
+        "note": "Contrasts browser-login CLI/MCP with separately billed REST API; credits are consumed.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "mcp"
+        ],
+        "url": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+        "title": "CLI and Skills help",
+        "note": "CLI and MCP use account sign-in without API keys; free web generations are excluded.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "summary": "Local renderer that turns Mermaid definitions into SVG, PNG or PDF.",
+    "auth": [
+      "none"
+    ],
+    "access": "self_hosted",
+    "access_detail": "Open-source CLI can be installed/run locally; no hosted-service credential is required.",
+    "production_gate": "Requires local Node/browser or container runtime and file-system execution; not a hosted SaaS REST API.",
+    "api": {
+      "protocols": [
+        "CLI"
+      ],
+      "breadth": "local",
+      "resources": "Diagram rendering and Mermaid-in-Markdown conversion."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "The vendor repository is a CLI; no official standalone MCP was verified in this pass."
+    },
+    "verdict": "local",
+    "blocker": "Execution environment and rendering dependencies are the integration work, rather than API authentication.",
+    "next_action": "Wrap the pinned CLI with validated input, resource limits and controlled output paths.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "title": "Official Mermaid CLI repository",
+        "note": "README documents local npm/container installation and rendering commands; no hosted credential flow.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "summary": "TranscriptAPI service for YouTube transcripts, metadata and discovery.",
+    "auth": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "trial",
+    "access_detail": "New TranscriptAPI accounts receive trial credits without a card; API keys are self-serve.",
+    "production_gate": "Ongoing paid usage and shared per-account quotas apply; this is TranscriptAPI, not Google's official YouTube captions API.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Transcripts, video metadata, search, channels and playlists."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://transcriptapi.com/mcp",
+      "note": "TranscriptAPI-owned MCP uses OAuth or Bearer API keys; not an official Google/YouTube MCP."
+    },
+    "verdict": "build",
+    "blocker": "No initial credential gate; third-party data availability and plan quotas remain operating constraints.",
+    "next_action": "Use trial credits for transcript reads and expose unavailable-video errors explicitly.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://transcriptapi.com/docs/getting-started/curl/",
+        "title": "TranscriptAPI cURL quickstart",
+        "note": "Self-serve trial credits and Bearer-key REST request example.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "auth",
+          "mcp",
+          "api"
+        ],
+        "url": "https://transcriptapi.com/docs/mcp/",
+        "title": "TranscriptAPI MCP",
+        "note": "Vendor-owned OAuth/key MCP and supported YouTube data tools.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "summary": "Meeting intelligence, transcripts and recording workflows.",
+    "auth": [
+      "token",
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "Personal access tokens are available on all plans; workspace-wide tokens require Business/Enterprise plus admin permissions.",
+    "production_gate": "Distributed apps use OAuth; workspace-wide data and advanced MCP tools are plan/role gated.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Meetings, transcripts, AI notes, recordings, tags and webhooks."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://developers.grain.com/mcp/faq.html",
+      "note": "Official Grain meeting MCP has basic tools on all plans and advanced deal/coaching tools on Business/Enterprise."
+    },
+    "verdict": "build",
+    "blocker": "Personal integration has a self-serve free path; workspace-wide scope is a separate paid/admin gate.",
+    "next_action": "Use user-scoped token/OAuth first; adopt v2 and the documented version header.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://support.grain.com/en/articles/15507288-grain-api",
+        "title": "Grain API",
+        "note": "Personal tokens on Free; workspace tokens need Business/Enterprise admin; documents OAuth, meetings and API version.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "auth",
+          "access",
+          "mcp"
+        ],
+        "url": "https://developers.grain.com/mcp/faq.html",
+        "title": "Grain MCP FAQ",
+        "note": "Most MCP tools available across plans; deal/coaching tools gated; preserves user permissions.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  }
+]

@@ -1,0 +1,245 @@
+{
+  "method": "Analyst-coded primary friction for each app outside the build-first queue. One category per app; secondary blockers remain in the row. This is prioritization, not an exhaustive count of every restriction.",
+  "items": [
+    {
+      "app_id": 10,
+      "cluster": "Customer tenant or vendor-issued access",
+      "rationale": "An external developer cannot infer a free tenant from public documentation."
+    },
+    {
+      "app_id": 11,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Legacy tokens stop working by April 2027; plan the OAuth migration and distribution requirements."
+    },
+    {
+      "app_id": 14,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Public customer-write distribution has an OAuth requirement beyond an internal-token prototype."
+    },
+    {
+      "app_id": 15,
+      "cluster": "Customer tenant or vendor-issued access",
+      "rationale": "No independent free developer tenant is established; trial setup goes through sales."
+    },
+    {
+      "app_id": 18,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "Paid API entitlement; native MCP does not currently prove write-tool support."
+    },
+    {
+      "app_id": 19,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Public app review and OAuth; persistent sandbox conversion is assisted."
+    },
+    {
+      "app_id": 20,
+      "cluster": "Customer tenant or vendor-issued access",
+      "rationale": "Tenant access and API User permission precede credential generation."
+    },
+    {
+      "app_id": 22,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Trial restrictions and messaging/telephony compliance requirements."
+    },
+    {
+      "app_id": 24,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Tenant permission review and app publication."
+    },
+    {
+      "app_id": 28,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Production permission review and testing cost terms remain unresolved."
+    },
+    {
+      "app_id": 29,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Partner approval for a distributable OAuth integration; account needed for private API use."
+    },
+    {
+      "app_id": 30,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Per-product authentication and trial restrictions."
+    },
+    {
+      "app_id": 31,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Production project approval and account permissions."
+    },
+    {
+      "app_id": 32,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Production app permissions and business verification."
+    },
+    {
+      "app_id": 33,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Advertising API application and supported-use-case approval."
+    },
+    {
+      "app_id": 34,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "Paid account and endpoint eligibility."
+    },
+    {
+      "app_id": 38,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Reviewed Trial/Standard access application."
+    },
+    {
+      "app_id": 39,
+      "cluster": "Unresolved evidence or credential terms",
+      "rationale": "App permission review and onboarding need confirmation."
+    },
+    {
+      "app_id": 40,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "Trial expiry and sender/domain verification."
+    },
+    {
+      "app_id": 41,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Development access does not establish production app approval."
+    },
+    {
+      "app_id": 42,
+      "cluster": "Local runtime or deployment setup",
+      "rationale": "A running administered WordPress store is required."
+    },
+    {
+      "app_id": 43,
+      "cluster": "Unresolved evidence or credential terms",
+      "rationale": "Trial credential availability needs direct confirmation because the support page only loaded through search."
+    },
+    {
+      "app_id": 44,
+      "cluster": "Customer tenant or vendor-issued access",
+      "rationale": "A generic Salesforce Developer Edition does not provision a Commerce Cloud realm."
+    },
+    {
+      "app_id": 45,
+      "cluster": "Local runtime or deployment setup",
+      "rationale": "Deployment edition changes authentication and API coverage."
+    },
+    {
+      "app_id": 46,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "Paid entitlement and exact resource scope must be checked."
+    },
+    {
+      "app_id": 47,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "A free ordinary store is not sufficient for the documented REST path."
+    },
+    {
+      "app_id": 49,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Sandbox calls do not prove production eligibility."
+    },
+    {
+      "app_id": 50,
+      "cluster": "Unresolved evidence or credential terms",
+      "rationale": "Third-party integration claims lack primary documentation."
+    },
+    {
+      "app_id": 53,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "Free credential issuance does not unlock full SEO data."
+    },
+    {
+      "app_id": 58,
+      "cluster": "Local runtime or deployment setup",
+      "rationale": "This is a local executable rather than a hosted SaaS API."
+    },
+    {
+      "app_id": 59,
+      "cluster": "Customer tenant or vendor-issued access",
+      "rationale": "Vendor-issued access and product-specific permission; published key-management endpoints do not establish self-serve onboarding."
+    },
+    {
+      "app_id": 60,
+      "cluster": "Product-surface or trial limits",
+      "rationale": "Product surface and plan must be named; legacy API packaging can mislead."
+    },
+    {
+      "app_id": 67,
+      "cluster": "Product-surface or trial limits",
+      "rationale": "Trial limits and role/security integration setup; AI-trial restrictions differ from SQL access."
+    },
+    {
+      "app_id": 69,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Partner admission for third-party OAuth; customer-side tokens remain a separate route."
+    },
+    {
+      "app_id": 79,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "Paid-plan API entitlement; standard free trial is insufficient for token generation."
+    },
+    {
+      "app_id": 82,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Production entitlement and product/geography restrictions remain even when Sandbox is self-serve."
+    },
+    {
+      "app_id": 83,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Regional eligibility, private-account requirements and trading permissions prevent a blanket production-ready claim."
+    },
+    {
+      "app_id": 84,
+      "cluster": "Unresolved evidence or credential terms",
+      "rationale": "Product identity is ambiguous; similarly named Paygent card/crypto products are not interchangeable."
+    },
+    {
+      "app_id": 85,
+      "cluster": "Unresolved evidence or credential terms",
+      "rationale": "Contradictory official documentation prevents a reliable current access verdict."
+    },
+    {
+      "app_id": 86,
+      "cluster": "Production authorization, distribution or compliance",
+      "rationale": "Production credential approval is separate from free sandbox development."
+    },
+    {
+      "app_id": 88,
+      "cluster": "Customer tenant or vendor-issued access",
+      "rationale": "No documented outsider self-serve sandbox; production credentials depend on an eligible Brex account."
+    },
+    {
+      "app_id": 89,
+      "cluster": "Customer tenant or vendor-issued access",
+      "rationale": "Outside developers need a customer sponsor or requested sandbox access."
+    },
+    {
+      "app_id": 90,
+      "cluster": "Customer tenant or vendor-issued access",
+      "rationale": "Licensing and vendor provisioning gate credentials and permitted data."
+    },
+    {
+      "app_id": 91,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "Enterprise license and required user IAM permissions gate the documented API."
+    },
+    {
+      "app_id": 92,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "REST API requires Enterprise access; do not assume a free MCP connection grants Enterprise REST credentials."
+    },
+    {
+      "app_id": 96,
+      "cluster": "Unresolved evidence or credential terms",
+      "rationale": "API/MCP exists but credential entitlement and permissions must be confirmed for the intended plan."
+    },
+    {
+      "app_id": 97,
+      "cluster": "Paid entitlement or licensing",
+      "rationale": "Credits/billing and identity differ by route; public keyless CLI does not mean free generation."
+    },
+    {
+      "app_id": 98,
+      "cluster": "Local runtime or deployment setup",
+      "rationale": "Execution environment and rendering dependencies are the integration work, rather than API authentication."
+    }
+  ]
+}

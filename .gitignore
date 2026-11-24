@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+data/raw/
+runs/
+artifacts/
+.DS_Store
+node_modules/
+*.zip
+*.tar.gz
+
+# Generated public source mirror and source browser
+dist/repo.git/
+dist/source/

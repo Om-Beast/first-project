@@ -1,0 +1,300 @@
+[
+  {
+    "app_id": 46,
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developers.squarespace.com/commerce-apis/v2/products",
+    "explanation": "The API accepts API keys or OAuth tokens.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 46,
+    "field": "access",
+    "before": "paid",
+    "after": "paid",
+    "status": "supported",
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "explanation": "Paid plan-specific key access is supported; plan names differ for legacy and current subscriptions.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 46,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Products, orders, inventory and transactions."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Products, orders, inventory and transactions."
+    },
+    "status": "supported",
+    "url": "https://developers.squarespace.com/commerce-apis/v2/products",
+    "explanation": "Public commerce REST endpoint documentation supports the stated surface.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 46,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://developers.squarespace.com/mcp/overview",
+      "note": "Official remote MCP; unauthenticated domains tools and signed-in Commerce tools. Commerce is currently limited to Claude and ChatGPT, and orders are read-only."
+    },
+    "status": "corrected",
+    "url": "https://developers.squarespace.com/mcp/overview",
+    "explanation": "A targeted second pass resolved first-pass unknown to an official remote MCP; this is a coverage improvement, not a false negative.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 46,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+    "explanation": "Conditional buildability follows from paid resource entitlement; official MCP supplies an additional integration path.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 49,
+    "field": "auth",
+    "before": [
+      "OAuth2"
+    ],
+    "after": [
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+    "explanation": "LWA OAuth2 for public apps and self-authorization for private apps are documented.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 49,
+    "field": "access",
+    "before": "approval",
+    "after": "approval",
+    "status": "supported",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer",
+    "explanation": "Developer-profile review confirms the approval gate; public and private app requirements differ.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 49,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Orders, shipments, selling operations and payment-related reports."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Orders, shipments, selling operations and payment-related reports."
+    },
+    "status": "supported",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+    "explanation": "Official docs describe REST-based selling operations APIs.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 49,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "after": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "status": "unresolved",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+    "explanation": "Targeted official-source search did not establish an operational MCP server; unknown remains and is not a claim of absence.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 49,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+    "explanation": "The conditional verdict is a rubric-based inference from registration, roles and authorization requirements.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 53,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key"
+    ],
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+    "explanation": "The API reference specifies a Bearer API key managed by owners or admins.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 53,
+    "field": "access",
+    "before": "paid",
+    "after": "paid",
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/api/reference/public/post-domain-rating-free",
+    "explanation": "The first-pass distinction stands: free key and limited public endpoint, paid core data.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 53,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "SEO analytics plus a limited public domain-rating endpoint."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "SEO analytics plus a limited public domain-rating endpoint."
+    },
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "explanation": "Core SEO endpoint families support broad REST coverage.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 53,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+      "note": "Official hosted MCP shares paid API access and limits."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+      "note": "Official hosted MCP shares paid API access and limits."
+    },
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+    "explanation": "Official hosted MCP and its Lite+ entitlement are directly documented.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 53,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+    "explanation": "Conditional reflects required core-data entitlement rather than credential issuance alone.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 59,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key"
+    ],
+    "status": "supported",
+    "url": "https://docs.waterfall.io/v1/authentication",
+    "explanation": "API-key auth stands; implementation should use the reference’s x-api-key header, rather than the differently named homepage example.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 59,
+    "field": "access",
+    "before": "approval",
+    "after": "approval",
+    "status": "supported",
+    "url": "https://docs.waterfall.io/v1/quickstart",
+    "explanation": "The quickstart explicitly directs developers to contact the team for access and pricing.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 59,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Prospecting, contact enrichment and job-change endpoints."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Prospector, contact/company search and enrichment, phone enrichment, job changes, email verification and account/key-management endpoints; many operations are asynchronous."
+    },
+    "status": "corrected",
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "explanation": "Following the documentation link expanded the first-pass surface: focused was too narrow for the documented search, enrichment, verification and account families.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 59,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "after": {
+      "status": "unknown",
+      "url": null,
+      "note": "No sufficiently specific primary MCP source captured in this pass; this is not an absence claim."
+    },
+    "status": "unresolved",
+    "url": "https://docs.waterfall.io/v1/introduction",
+    "explanation": "Official Agent Skills are linked, but they do not prove an MCP server. The first-pass unknown remains.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 59,
+    "field": "verdict",
+    "before": "outreach",
+    "after": "outreach",
+    "status": "supported",
+    "url": "https://docs.waterfall.io/v1/authentication",
+    "explanation": "Outreach follows from the explicitly vendor-issued access path.",
+    "reviewer": "AI_document_audit"
+  }
+]

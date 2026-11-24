@@ -1,0 +1,1313 @@
+[
+  {
+    "id": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "summary": "Team messaging with channels, files and workflow automation.",
+    "auth": [
+      "OAuth2",
+      "token"
+    ],
+    "access": "free",
+    "access_detail": "Free developer sandbox; app installation and scopes need workspace permission.",
+    "production_gate": "Workspace admin approval can apply; distributing an MCP client has separate eligibility rules.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messages, channels, users, files, canvases and events."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+      "note": "Official action-capable remote MCP; only directory-published or internal client apps may use it."
+    },
+    "verdict": "build",
+    "blocker": "Admin consent and app distribution eligibility.",
+    "next_action": "Build against a developer sandbox; test scoped OAuth installation.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "summary"
+        ],
+        "url": "https://docs.slack.dev/apis/web-api/using-web-api-with-postman/",
+        "title": "Using the Web API with Postman",
+        "note": "Developer sandboxes are free; Web API requests use OAuth tokens and require app-install permissions.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "mcp",
+          "verdict"
+        ],
+        "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+        "title": "Slack MCP server overview",
+        "note": "Official MCP exposes search, messages, files, canvases, users and lists; client registration and workspace controls apply.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "summary": "Programmable messaging, voice and verification infrastructure.",
+    "auth": [
+      "API key",
+      "Basic"
+    ],
+    "access": "trial",
+    "access_detail": "Self-serve free trial with product-specific quotas and email/phone verification.",
+    "production_gate": "Paid usage and product/country registration rules apply after trial.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messaging, voice, verification, numbers and accounts."
+    },
+    "mcp": {
+      "status": "community",
+      "url": "https://help.twilio.com/articles/43750712673819",
+      "note": "Twilio Labs publishes an alpha MCP; Twilio explicitly says it is experimental and not officially supported."
+    },
+    "verdict": "conditional",
+    "blocker": "Trial restrictions and messaging/telephony compliance requirements.",
+    "next_action": "Prototype with trial recipients and product quotas; separate production registration work.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api"
+        ],
+        "url": "https://www.twilio.com/docs/iam/api",
+        "title": "Our API: the basics",
+        "note": "HTTP Basic authentication uses an API-key SID and secret.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://www.twilio.com/docs/usage/trials",
+        "title": "Twilio trial account",
+        "note": "Self-serve trial runs real API requests with product-specific limits and phone/email verification.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://help.twilio.com/articles/43750712673819",
+        "title": "Twilio MCP availability",
+        "note": "Twilio Labs MCP is alpha and unsupported by Twilio Support.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "summary": "Team chat with bots, channels and collaboration workflows.",
+    "auth": [
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "Free plan includes API support; developers register a client and request OAuth scopes.",
+    "production_gate": "Organization policies and granted scopes constrain customer data.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Channels, messages, users, bots and webhooks."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+      "note": "Official Cliq MCP exposes workspace actions through Zoho MCP."
+    },
+    "verdict": "build",
+    "blocker": "OAuth scopes and organization permissions.",
+    "next_action": "Create a free test organization and verify one least-privilege channel action.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+        "title": "Cliq REST API",
+        "note": "Documented REST resources require OAuth2 and domain-specific token handling.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://www.zoho.com/cliq/plan-comparison.html?zredirect=f",
+        "title": "Cliq plan comparison",
+        "note": "API support is included in the Free plan.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+        "title": "Guide to Zoho Cliq MCP",
+        "note": "Vendor documentation describes its official action-capable MCP server.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "summary": "Workplace suite combining chat, documents, calendar and collaboration.",
+    "auth": [
+      "token"
+    ],
+    "access": "free",
+    "access_detail": "Developer Console supports review-free test apps in test companies; tenant/user access tokens authorize API calls.",
+    "production_gate": "Publishing app permissions requires tenant review; testing privileges do not imply production approval.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messaging, users, documents, calendars and application permissions."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+      "note": "Vendor OpenAPI MCP tooling exists; validate local versus deprecated remote modes before reuse."
+    },
+    "verdict": "conditional",
+    "blocker": "Tenant permission review and app publication.",
+    "next_action": "Use a test company first, then map production scopes and administrator review.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+        "title": "API Explorer Guide",
+        "note": "Server APIs use tenant/user access credentials; Explorer supports test applications.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access"
+        ],
+        "url": "https://open.larksuite.com/document/home/introduction-to-custom-app-development/testing-enterprise-and-personnel-functions",
+        "title": "Test companies and users",
+        "note": "Developers can create test companies for review-free test applications.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "verdict"
+        ],
+        "url": "https://open.larksuite.com/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN",
+        "title": "Apply for API permission",
+        "note": "Production API permissions take effect after application review.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+        "title": "OpenAPI MCP overview",
+        "note": "Official developer documentation exposes OpenAPI tools through MCP.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "summary": "Team chat with a focused API for messaging and channels.",
+    "auth": [
+      "API key",
+      "token"
+    ],
+    "access": "free",
+    "access_detail": "API addon and key generation are available on all plans, including Free.",
+    "production_gate": "App-install permissions and integration limits still apply.",
+    "api": {
+      "protocols": [
+        "HTTP"
+      ],
+      "breadth": "focused",
+      "resources": "Send/reply/delete messages, reactions, channels and channel message listing."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+      "note": "Official MCP uses an app key plus a scoped user or bot token. Tool availability depends on the selected app scopes; this is distinct from the simpler API-key addon."
+    },
+    "verdict": "build",
+    "blocker": "Install API addon; no interactive message-builder or Events API in this surface.",
+    "next_action": "Wrap the API addon and verify supported messaging operations.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "title": "Pumble API Overview",
+        "note": "API addon on all plans generates API keys for a focused messaging/channel HTTP surface.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+        "title": "AI and automation in Pumble",
+        "note": "Vendor guide discusses MCP alongside the API and states API limitations.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "verdict"
+        ],
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "title": "Pumble API Overview \u2014 opened audit",
+        "note": "All-plan addon installation, key generation and supported message/channel operations were confirmed.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+        "title": "Pumble MCP setup \u2014 opened audit",
+        "note": "Official MCP uses an addon app key plus scoped user/bot tokens; tools depend on selected scopes.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "auth",
+          "mcp"
+        ],
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+        "title": "Native MCP app key and user/bot token",
+        "note": "Official MCP setup requires an app key and a user or bot token. Available tools depend on scopes.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "summary": "Communities and messaging with programmable bots and interactions.",
+    "auth": [
+      "OAuth2",
+      "token"
+    ],
+    "access": "free",
+    "access_detail": "A developer can create a bot in the applications portal; bot token is separate from OAuth user authorization.",
+    "production_gate": "Guild install permissions and privileged-intent review can constrain distribution.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messages, channels, guilds, bot interactions and real-time Gateway."
+    },
+    "mcp": {
+      "status": "community",
+      "url": "https://github.com/elmokulc/pydiscord-mcp-server",
+      "note": "Community bot-based Discord MCP found; existence and documented scope checked, runtime/security not tested."
+    },
+    "verdict": "build",
+    "blocker": "Use the bot API; automating normal accounts is forbidden.",
+    "next_action": "Build a bot in a test guild with minimal permissions.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://support.discord.com/hc/en-us/articles/115002192352-Automated-User-Accounts-Self-Bots",
+        "title": "Automated User Accounts",
+        "note": "Official guidance permits developer-created token-authenticated bot accounts and forbids normal-account self-bots.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "verdict"
+        ],
+        "url": "https://docs.discord.com/developers/docs/interactions/slash-commands",
+        "title": "Application Commands",
+        "note": "HTTP application-command endpoints use bot or authorization credentials and installation scopes.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://github.com/elmokulc/pydiscord-mcp-server",
+        "title": "Community MCP repository \u2014 opened primary source",
+        "note": "Community bot-based Discord MCP found; existence and documented scope checked, runtime/security not tested.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "summary": "Bot-based messaging and interactive services inside Telegram.",
+    "auth": [
+      "token"
+    ],
+    "access": "free",
+    "access_detail": "BotFather registers bots and issues tokens; the Bot Platform is free for developers.",
+    "production_gate": "Bot permissions and reach differ from a user account; paid broadcast capacity is optional.",
+    "api": {
+      "protocols": [
+        "HTTP"
+      ],
+      "breadth": "focused",
+      "resources": "Messages, media, callbacks, chat administration and payments."
+    },
+    "mcp": {
+      "status": "community",
+      "url": "https://github.com/Moreti2002/mcp-telegram",
+      "note": "Community wrapper uses the Telegram Bot API and BotFather token, not personal-account MTProto."
+    },
+    "verdict": "build",
+    "blocker": "Bot scope does not grant access to arbitrary private user conversations.",
+    "next_action": "Obtain a BotFather token and test getMe plus one permitted chat action.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "summary",
+          "verdict"
+        ],
+        "url": "https://core.telegram.org/bots",
+        "title": "Bots: introduction for developers",
+        "note": "The platform is free and BotFather issues authentication tokens.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api"
+        ],
+        "url": "https://core.telegram.org/bots/api",
+        "title": "Telegram Bot API",
+        "note": "Official HTTP-based API documents bot methods, HTTPS requests and token authentication.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://github.com/Moreti2002/mcp-telegram",
+        "title": "Community MCP repository \u2014 opened primary source",
+        "note": "Community wrapper uses the Telegram Bot API and BotFather token, not personal-account MTProto.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 28,
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "summary": "Business messaging and calling through Meta-hosted APIs.",
+    "auth": [
+      "token"
+    ],
+    "access": "unknown",
+    "access_detail": "Self-serve app creation and temporary/system-user token setup are documented; explicit free/trial cost terms were not resolved from the retrieved current guide.",
+    "production_gate": "Onboarding other businesses as a Solution Partner/Tech Provider requires reviewed WhatsApp messaging/management permissions; business phone registration and billing are separate.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messages, templates, business accounts and phone numbers."
+    },
+    "mcp": {
+      "status": "community",
+      "url": "https://github.com/saravanaspar/WBMCP",
+      "note": "Community wrapper targets the official WhatsApp Business Cloud API; it is not a Meta-authored or runtime-verified MCP server."
+    },
+    "verdict": "conditional",
+    "blocker": "Production permission review and testing cost terms remain unresolved.",
+    "next_action": "Confirm test-cost terms, then complete phone setup and the relevant app-review path.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview/",
+        "title": "WhatsApp Business Platform",
+        "note": "Vendor API example sends messages with a Bearer access token.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "verdict"
+        ],
+        "url": "https://developers.facebook.com/docs/graph-api/reference/whats-app-business-account/",
+        "title": "WhatsApp Business Account reference",
+        "note": "Account reads require a WABA ID, access token and WhatsApp management/messaging permissions.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth",
+          "api"
+        ],
+        "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+        "title": "WhatsApp Cloud API Get Started \u2014 opened audit",
+        "note": "Quickstart creates an app/account, issues a temporary test token and describes system-user tokens; it did not explicitly establish free trial pricing.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://developers.facebook.com/docs/whatsapp/solution-providers/app-review/sample-submission/",
+        "title": "WhatsApp solution-provider review",
+        "note": "Apps acting for other businesses need reviewed WhatsApp messaging and management permissions.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://github.com/saravanaspar/WBMCP",
+        "title": "Community MCP repository \u2014 opened primary source",
+        "note": "Community wrapper targets the official WhatsApp Business Cloud API; it is not a Meta-authored or runtime-verified MCP server.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "summary": "Business telephony with call data, contacts and integration APIs.",
+    "auth": [
+      "Basic",
+      "OAuth2"
+    ],
+    "access": "customer",
+    "access_detail": "Existing-account admins generate API ID/token; partner developer accounts and OAuth credentials follow an application process.",
+    "production_gate": "Multi-customer OAuth requires the Tech Partner program.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Calls, contacts, users, numbers and webhooks."
+    },
+    "mcp": {
+      "status": "not_found",
+      "url": "https://developer.aircall.io/docs/mcp-faqs",
+      "note": "Vendor FAQ explicitly says it does not offer an Aircall MCP server at publication; Aircall as MCP client is separate."
+    },
+    "verdict": "outreach",
+    "blocker": "Partner approval for a distributable OAuth integration; account needed for private API use.",
+    "next_action": "Apply to the Tech Partner program for OAuth; use an existing account only for a private prototype.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://developer.aircall.io/docs/authentication",
+        "title": "Authentication overview",
+        "note": "Basic API ID/token is for private tools; OAuth is for integrations serving multiple customers.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://developer.aircall.io/docs/oauth",
+        "title": "OAuth implementation guide",
+        "note": "OAuth credentials require a Tech Partner application and an Aircall account.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://developer.aircall.io/docs/mcp-faqs",
+        "title": "MCP FAQs",
+        "note": "Aircall distinguishes connecting external MCP servers to its agent from offering its own server.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "summary": "Programmable communication APIs for voice, messaging and video.",
+    "auth": [
+      "API key",
+      "Basic",
+      "JWT"
+    ],
+    "access": "trial",
+    "access_detail": "Self-serve signup gives API credentials and a free trial; verification/payment are needed for some features.",
+    "production_gate": "Production requires account verification/payment and product-specific rules.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messaging, voice, video, verification, numbers and accounts."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://developer.vonage.com/en/mcp-server/technical-details",
+      "note": "Vendor MCP server exposes communication API tools using Vonage credentials."
+    },
+    "verdict": "conditional",
+    "blocker": "Per-product authentication and trial restrictions.",
+    "next_action": "Prototype one product; choose JWT for capabilities that require it.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api"
+        ],
+        "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+        "title": "Authentication",
+        "note": "Authentication varies by product between key/secret, Basic and JWT.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://developer.vonage.com/en/dashboard/getting-started",
+        "title": "Dashboard Getting Started",
+        "note": "Free trial and dashboard credentials are available; production and certain features need verification/payment.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://developer.vonage.com/en/mcp-server/technical-details",
+        "title": "MCP technical details",
+        "note": "Official MCP tools wrap Voice, Messaging, Video and other Vonage APIs.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Advertising campaign management, reporting and keyword research.",
+    "auth": [
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "Enabling the API on a Google Cloud project grants test access; production uses project access levels.",
+    "production_gate": "Production access levels require a separate application/approval path.",
+    "api": {
+      "protocols": [
+        "REST",
+        "gRPC"
+      ],
+      "breadth": "broad",
+      "resources": "Campaigns, ad groups, ads, reporting, audiences and keyword planning."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "note": "Google documents an open-source MCP server; official documentation does not imply support guarantees for every tool."
+    },
+    "verdict": "conditional",
+    "blocker": "Production project approval and account permissions.",
+    "next_action": "Prototype on test accounts; verify production Cloud-project access.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "mcp",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+        "title": "Google Ads MCP integration guide",
+        "note": "Developer tokens were sunset in September 2026; project access levels and OAuth/ADC govern current MCP access.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "verdict"
+        ],
+        "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+        "title": "Access levels and permissible use",
+        "note": "Test access and production access levels are distinct; permissible use can limit API features.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth",
+          "access",
+          "verdict"
+        ],
+        "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+        "title": "Developer token migration \u2014 opened audit",
+        "note": "Body text supersedes stale page summary: developer tokens sunset September 2026; Cloud projects now own access levels.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "api"
+        ],
+        "url": "https://developers.google.com/google-ads/api/rest/overview",
+        "title": "REST interface overview \u2014 audit",
+        "note": "Both gRPC and REST interfaces are documented; the first pass omitted gRPC.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+        "title": "Google Ads MCP \u2014 opened audit",
+        "note": "MCP supports reads and selected asset/video/label mutations; campaign and budget mutations remain outside this server.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Advertising management and reporting across Meta properties.",
+    "auth": [
+      "OAuth2",
+      "token"
+    ],
+    "access": "approval",
+    "access_detail": "Development access is available for app-role users; serving other customers requires reviewed permissions/access tiers.",
+    "production_gate": "App review, business verification and ads access tiers constrain external-account access.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Ad accounts, campaigns, ad sets, ads, creatives and insights."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "No conclusive official MCP evidence captured in this scoped pass; not a claim of absence."
+    },
+    "verdict": "conditional",
+    "blocker": "Production app permissions and business verification.",
+    "next_action": "Prototype with owned assets, then prepare an app-review demonstration.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://developers.facebook.com/docs/business-management-apis/2tier-bm-solution/pre-app-review-development/",
+        "title": "Pre-App Review Development",
+        "note": "OAuth user access tokens authorize scoped actions; external users require approved permissions.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "verdict"
+        ],
+        "url": "https://developers.facebook.com/docs/graph-api/overview/rate-limiting/",
+        "title": "Graph API rate limits",
+        "note": "Marketing API operations use access tiers and business-use-case rate limits.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access"
+        ],
+        "url": "https://developers.facebook.com/docs/business-management-apis/system-users/overview/",
+        "title": "System Users overview",
+        "note": "System-user permissions can require app review and business verification.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Professional-network advertising management and analytics.",
+    "auth": [
+      "OAuth2"
+    ],
+    "access": "approval",
+    "access_detail": "Advertising API access must be requested in the developer portal, including Development tier.",
+    "production_gate": "Standard tier is needed for wider multi-account campaign management; all tiers operate on production data.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Ad accounts, campaigns, creatives and advertising analytics."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "No conclusive official MCP evidence captured in this scoped pass; not a claim of absence."
+    },
+    "verdict": "outreach",
+    "blocker": "Advertising API application and supported-use-case approval.",
+    "next_action": "Submit the Advertising API access request before scheduling toolkit work.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth"
+        ],
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/lms-faq?view=li-lms-2026-01",
+        "title": "Marketing API FAQ",
+        "note": "Marketing permissions are three-legged OAuth; two-legged auth is unavailable.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "api",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-01",
+        "title": "Marketing API access tiers",
+        "note": "Development and Standard tiers require product access requests; both use production data.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "CRM, lead management and marketing automation platform.",
+    "auth": [
+      "token",
+      "OAuth2"
+    ],
+    "access": "paid",
+    "access_detail": "API and Private Integration Tokens are documented across paid subscription plans; higher-tier endpoints remain restricted.",
+    "production_gate": "Subscription eligibility, scopes and account permissions vary by endpoint.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Contacts, conversations, calendars, opportunities, workflows and account data."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741",
+      "note": "Official HighLevel/LeadConnector MCP connects through OAuth to authorized sub-accounts."
+    },
+    "verdict": "conditional",
+    "blocker": "Paid account and endpoint eligibility.",
+    "next_action": "Choose one authorized sub-account and verify required scopes/endpoints.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "access",
+          "api",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation?fp_ref=getfreetrail&fp_sid=api-facts",
+        "title": "HighLevel API Documentation",
+        "note": "OAuth and Private Integration Tokens span subscription plans; endpoint eligibility varies.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741",
+        "title": "HighLevel MCP Server",
+        "note": "Official setup guide documents OAuth and authorized sub-account selection.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Email marketing, audiences, campaigns and analytics.",
+    "auth": [
+      "API key",
+      "OAuth2",
+      "Basic"
+    ],
+    "access": "free",
+    "access_detail": "Create an account, generate a key and call the API; available actions follow plan and user role.",
+    "production_gate": "Third-party installed integrations need OAuth; paid features remain plan-gated.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Audiences, campaigns, activity, reports and batch operations."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "note": "Official MCP searches documentation only; it cannot access or act on a Mailchimp account."
+    },
+    "verdict": "build",
+    "blocker": "Use API/OAuth for account actions; documentation MCP is not an account integration.",
+    "next_action": "Start with audience reads via a private key, then implement OAuth for customers.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "verdict"
+        ],
+        "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "title": "Marketing API authentication",
+        "note": "API keys cover own-account use; third-party installed integrations need OAuth2, bounded by user roles.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "api",
+          "summary"
+        ],
+        "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+        "title": "Create an account",
+        "note": "An account can generate keys and use the Marketing API; capabilities depend on its plan.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+        "title": "MCP server",
+        "note": "This MCP searches published API documentation without credentials, not customer account data.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth"
+        ],
+        "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "title": "Authentication \u2014 opened audit",
+        "note": "Keys and OAuth tokens can be transported via Basic or Bearer authentication; Basic was omitted in the first pass.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "access"
+        ],
+        "url": "https://mailchimp.com/help/about-mailchimp-pricing-plans/?linkedin_auth_error=user_cancelled_login",
+        "title": "Mailchimp plans \u2014 audit",
+        "note": "A Free Marketing plan exists; API capabilities still follow plan and role restrictions.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "verdict"
+        ],
+        "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+        "title": "Create an account \u2014 opened audit",
+        "note": "An account can generate keys and call Marketing API features according to its plan.",
+        "retrieval": "opened"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+        "title": "MCP server \u2014 opened audit",
+        "note": "The official MCP searches published documentation only and does not act on Mailchimp account data.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Customer data and automated email, SMS and push marketing.",
+    "auth": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "free",
+    "access_detail": "New test accounts start on the free plan; authorized account roles create scoped private API keys.",
+    "production_gate": "Certain email/SMS capabilities need paid features or account verification.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Profiles, events, lists, catalogs, campaigns and flows."
+    },
+    "mcp": {
+      "status": "official",
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+      "note": "Vendor remote MCP exposes account tools; authorization and account plan still apply."
+    },
+    "verdict": "build",
+    "blocker": "Account-role permissions, quotas and feature-specific paid gates.",
+    "next_action": "Use a free test account and a scoped private key before customer OAuth.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+        "title": "Authenticate API requests",
+        "note": "Server-side APIs support private keys and OAuth; public site IDs are for client-side operations.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://developers.klaviyo.com/en/docs/create_a_test_account",
+        "title": "Create a test account",
+        "note": "Test accounts begin on Free; paid features and account verification are not inherited.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+        "title": "Klaviyo MCP server",
+        "note": "Official developer site documents its MCP and available account tools.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Funnel building, contacts, courses and marketing automation.",
+    "auth": [
+      "API key"
+    ],
+    "access": "free",
+    "access_detail": "Pricing lists public-API request quotas on Free as well as paid plans; keys are generated in account settings.",
+    "production_gate": "Rate limits differ by plan and API covers selected features.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Contacts, tags, custom fields and selected automation resources."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "No conclusive official MCP evidence captured in this scoped pass; not a claim of absence."
+    },
+    "verdict": "build",
+    "blocker": "Focused endpoint surface and plan-specific request quotas.",
+    "next_action": "Generate a free-account key and validate required contact/tag operations.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+        "title": "How to use the systeme.io public API",
+        "note": "Keys authenticate the public API, whose surface includes selected contact and custom-field features.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://systeme.io/pricing",
+        "title": "Systeme.io Pricing",
+        "note": "Free has an explicit API-request quota, with higher quotas on paid plans.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Visual discovery, publishing, catalog and advertising platform.",
+    "auth": [
+      "OAuth2"
+    ],
+    "access": "approval",
+    "access_detail": "Even Trial API access follows a reviewed application; tokens are available after approval.",
+    "production_gate": "Standard access requires an upgrade for broader user-facing functionality.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Pins, boards, catalogs, audiences, ads and analytics."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "No conclusive official MCP evidence captured in this scoped pass; not a claim of absence."
+    },
+    "verdict": "outreach",
+    "blocker": "Reviewed Trial/Standard access application.",
+    "next_action": "Apply for Trial access before promising a toolkit delivery date.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth"
+        ],
+        "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+        "title": "Authentication and authorization",
+        "note": "OAuth access tokens authorize requests on behalf of users.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict"
+        ],
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "title": "Connect app",
+        "note": "App requests for Trial access are reviewed and may be approved or denied.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "api",
+          "summary"
+        ],
+        "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+        "title": "Access tiers",
+        "note": "Documented API covers publishing, ads, audiences, catalogs and analytics with tier-dependent behavior.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Publishing and engagement on Meta Threads.",
+    "auth": [
+      "OAuth2"
+    ],
+    "access": "unknown",
+    "access_detail": "Meta-owned API collection documents OAuth setup and access tokens; exact self-serve versus reviewed onboarding was not resolved.",
+    "production_gate": "External-user app review requirements need a fresh official-documentation check.",
+    "api": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "focused",
+      "resources": "Publish posts, retrieve media, manage replies and read insights."
+    },
+    "mcp": {
+      "status": "unknown",
+      "url": null,
+      "note": "No conclusive official MCP evidence captured in this scoped pass; not a claim of absence."
+    },
+    "verdict": "conditional",
+    "blocker": "App permission review and onboarding need confirmation.",
+    "next_action": "Verify current Meta permission and app-review documentation.",
+    "confidence": "medium",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api",
+          "summary"
+        ],
+        "url": "https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api?entity=folder-34203612-995a4593-61de-4558-9b26-6c8becae85e4",
+        "title": "Threads API \u2014 Meta collection",
+        "note": "Meta-owned collection documents OAuth authorization-code tokens, API operations and limitations.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "verdict"
+        ],
+        "url": "https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api?entity=folder-34203612-995a4593-61de-4558-9b26-6c8becae85e4",
+        "title": "Threads API \u2014 Meta collection",
+        "note": "A documented OAuth/API surface supports a conditional toolkit assessment; onboarding remains unresolved.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "auth"
+        ],
+        "url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions",
+        "title": "Threads access tokens \u2014 opened official source",
+        "note": "Meta documents the authorization-code flow, permission grants and short-lived access tokens.",
+        "retrieval": "opened"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  },
+  {
+    "id": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "summary": "Transactional email delivery with templates and delivery analytics.",
+    "auth": [
+      "API key"
+    ],
+    "access": "trial",
+    "access_detail": "New accounts can use a time-limited free trial; sending also needs account/sender verification.",
+    "production_gate": "Sending after trial requires a paid plan; verification and sender setup remain prerequisites.",
+    "api": {
+      "protocols": [
+        "REST",
+        "SMTP"
+      ],
+      "breadth": "focused",
+      "resources": "Email sending, templates, contacts, statistics and suppression lists."
+    },
+    "mcp": {
+      "status": "community",
+      "url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+      "note": "Vendor community tutorial demonstrates a custom SendGrid MCP wrapper; this is not a supported managed server."
+    },
+    "verdict": "conditional",
+    "blocker": "Trial expiry and sender/domain verification.",
+    "next_action": "Verify a sender and test one API send; choose a paid production plan if needed.",
+    "confidence": "high",
+    "evidence": [
+      {
+        "fields": [
+          "auth",
+          "api"
+        ],
+        "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/quickstart-php?8b09db95_page=12",
+        "title": "SendGrid Email API Quickstart",
+        "note": "Quickstart requires an API key, 2FA and domain authentication for email sending.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "access",
+          "verdict",
+          "summary"
+        ],
+        "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan?save_locale=en",
+        "title": "Upgrade your plan",
+        "note": "A time-limited free trial permits Email API use; continued sending needs an upgrade.",
+        "retrieval": "search"
+      },
+      {
+        "fields": [
+          "mcp"
+        ],
+        "url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+        "title": "Build a SendGrid MCP Server",
+        "note": "Twilio community tutorial supplies a custom MCP wrapper using a SendGrid key.",
+        "retrieval": "search"
+      }
+    ],
+    "checked_at": "2026-11-24"
+  }
+]

@@ -1,0 +1,328 @@
+[
+  {
+    "app_id": 2,
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "token"
+    ],
+    "after": [
+      "OAuth2",
+      "API key",
+      "token"
+    ],
+    "status": "corrected",
+    "url": "https://developers.hubspot.com/changelog/legacy-private-app-creation-sunset",
+    "explanation": "First pass mentioned Service Keys in prose but omitted API key from the normalized auth array. Fresh changelog review corrected the classification.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 2,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/developer-platform-basics",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 2,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "CRM objects, associations, engagements, marketing objects and webhooks."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "CRM objects, associations, engagements, marketing objects and webhooks."
+    },
+    "status": "supported",
+    "url": "https://developers.hubspot.com/developer-platform-basics",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 2,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+      "note": "Hosted CRM read/write MCP; local developer MCP is a separate surface."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+      "note": "Hosted CRM read/write MCP; local developer MCP is a separate surface."
+    },
+    "status": "supported",
+    "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 2,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://developers.hubspot.com/developer-platform-basics",
+    "explanation": "Analyst inference from the documented credential path and API; not a successful authenticated execution test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key",
+      "OAuth2"
+    ],
+    "status": "corrected",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/user-guide/ai/capabilities/mcp.mdx",
+    "explanation": "First pass captured bearer API keys but omitted OAuth on the native business-data MCP. First-party source docs confirm both paths.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "access",
+    "before": "self_hosted",
+    "after": "self_hosted",
+    "status": "supported",
+    "url": "https://twenty.com/",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "broad",
+      "resources": "CRM records, custom objects, metadata and workflows."
+    },
+    "after": {
+      "protocols": [
+        "REST",
+        "GraphQL"
+      ],
+      "breadth": "broad",
+      "resources": "Schema-generated Core record APIs and Metadata schema APIs, each available through REST and GraphQL."
+    },
+    "status": "supported",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx",
+    "explanation": "Fresh first-party source docs support the classification and refine surface detail; the old localized CLI page returned 404 and was replaced.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://twenty.com/pricing?trk=article-ssr-frontend-pulse_little-text-block",
+      "note": "Native MCP is advertised for Cloud workspaces; self-hosted parity is not established here."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://twenty.com/pricing?trk=article-ssr-frontend-pulse_little-text-block",
+      "note": "Native data MCP supports OAuth or a scoped API key; the Cloud workspace supplies the documented endpoint."
+    },
+    "status": "supported",
+    "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/user-guide/ai/capabilities/mcp.mdx",
+    "explanation": "Fresh first-party source docs support the classification and refine surface detail; the old localized CLI page returned 404 and was replaced.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 5,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://twenty.com/",
+    "explanation": "Analyst inference from the documented credential path and API; not a successful authenticated execution test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "auth",
+    "before": [
+      "token"
+    ],
+    "after": [
+      "token"
+    ],
+    "status": "supported",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "access",
+    "before": "customer",
+    "after": "customer",
+    "status": "supported",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Issues, customers, accounts, users and operational support data."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Issues, customers, accounts, users and operational support data."
+    },
+    "status": "supported",
+    "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://www.usepylon.com/pylon-facts",
+      "note": "Vendor documents Pylon MCP on every plan; separate from outbound MCP connectors."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://www.usepylon.com/pylon-facts",
+      "note": "Vendor documents Pylon MCP on every plan; separate from outbound MCP connectors."
+    },
+    "status": "supported",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 15,
+    "field": "verdict",
+    "before": "outreach",
+    "after": "outreach",
+    "status": "supported",
+    "url": "https://www.usepylon.com/pylon-facts",
+    "explanation": "Analyst inference from the documented credential path and API; not a successful authenticated execution test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "auth",
+    "before": [
+      "OAuth2",
+      "API key",
+      "Basic"
+    ],
+    "after": [
+      "OAuth2",
+      "API key",
+      "Basic"
+    ],
+    "status": "supported",
+    "url": "https://developer.helpscout.com/docs-api/",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "access",
+    "before": "paid",
+    "after": "paid",
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Conversations, customers, mailboxes, users, Docs collections and articles."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Conversations, customers, mailboxes, users, Docs collections and articles."
+    },
+    "status": "supported",
+    "url": "https://developer.helpscout.com/docs-api/",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+      "note": "Official MCP is read-only for new connections; plans require API entitlement."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+      "note": "Official MCP is read-only for new connections; plans require API entitlement."
+    },
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+    "explanation": "Freshly opened vendor documentation supports the original classification; account access itself was not tested.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  },
+  {
+    "app_id": 18,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+    "explanation": "Analyst inference from the documented credential path and API; not a successful authenticated execution test.",
+    "reviewer": "AI_document_audit",
+    "sample": true
+  }
+]

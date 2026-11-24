@@ -1,0 +1,162 @@
+[
+  {
+    "app_id": 82,
+    "field": "auth",
+    "status": "supported",
+    "url": "https://plaid.com/docs/api/oauth/",
+    "explanation": "The OAuth service supports OAuth2 grants for consumer-report sharing, Dashboard and other Plaid services. This does not replace client_id/secret and Item access-token authentication on most product endpoints, and is distinct from bank OAuth in Link.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 82,
+    "field": "access",
+    "status": "supported",
+    "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+    "explanation": "Fresh vendor table distinguishes free no-approval mock Sandbox, limited auto-approved US/CA Trial for eligible new signups, and reviewed paid full Production.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 82,
+    "field": "api",
+    "status": "supported",
+    "url": "https://plaid.com/docs/api/",
+    "explanation": "Vendor API overview documents broad JSON-over-HTTPS endpoints; Accounts reference confirms keyed Item requests. REST is used as a broad HTTP-API label here, not a claim of strict REST architectural conformance.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 82,
+    "field": "mcp",
+    "status": "supported",
+    "url": "https://plaid.com/docs/sandbox/",
+    "explanation": "Vendor Sandbox docs explicitly describe a local MCP for creating mock Items, firing test webhooks and searching docs; scope remains development rather than unrestricted production banking.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 82,
+    "field": "verdict",
+    "status": "supported",
+    "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+    "explanation": "Conditional is appropriate: a toolkit can be prototyped now, but full production product/geography entitlements are separately gated. No authenticated API calls were performed.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 87,
+    "field": "auth",
+    "status": "supported",
+    "url": "https://developer.xero.com/faq/getting-started",
+    "explanation": "Fresh vendor FAQ says OAuth2 is required and basic API-key authentication is not supported.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 87,
+    "field": "access",
+    "status": "supported",
+    "url": "https://developer.xero.com/faq/pricing-and-policy-updates",
+    "explanation": "Current pricing FAQ lists Starter at no charge with up to five connections; demo-company testing is documented. The separate remote MCP plan gate is correctly retained.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 87,
+    "field": "api",
+    "status": "supported",
+    "url": "https://developer.xero.com/documentation/api/accounting/requests-and-responses/",
+    "explanation": "Vendor HTTP-resource documentation demonstrates contacts/invoices and create/update operations with XML or JSON payloads, supporting a broad REST accounting surface.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 87,
+    "field": "mcp",
+    "status": "supported",
+    "url": "https://developer.xero.com/faq/remote-mcp",
+    "explanation": "Opened vendor FAQ confirms OAuth2/PKCE, official remote URL, demo-only Starter access, Core-or-above real organisations and Xero-operated infrastructure.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 87,
+    "field": "verdict",
+    "status": "supported",
+    "url": "https://developer.xero.com/faq/remote-mcp",
+    "explanation": "Build is supported for the documented demo/private development route. It must not be read as free remote-MCP access to real customer organisations; the record explicitly limits that path.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 91,
+    "field": "auth",
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Opened API guide requires authenticated user credentials and a generated user access token plus a licensed identity and IAM role; this is the Enterprise product, not consumer notebook access.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 91,
+    "field": "access",
+    "status": "contradicted",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+    "explanation": "The final record labels entry paid, but current vendor licensing docs offer a full-featured free-trial subscription and explicitly include trial users in IAM setup. Recommend trial, retaining Enterprise license assignment and Cloud admin/IAM prerequisites. Product and setup pages disagree on trial duration, so avoid an exact duration.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 91,
+    "field": "api",
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Opened Preview API documents creating, retrieving, listing, deleting and sharing Enterprise notebooks. The RPC reference additionally documents notebook services; scope is focused notebook operations.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 91,
+    "field": "mcp",
+    "status": "unresolved",
+    "url": "https://docs.cloud.google.com/mcp/supported-products",
+    "explanation": "No conclusive official NotebookLM account-data MCP was identified. Search results for a Google /mcp/notebook endpoint refer to Colab Enterprise runtime tools, which cannot establish NotebookLM MCP availability. Unknown should remain.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 91,
+    "field": "verdict",
+    "status": "supported",
+    "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+    "explanation": "Conditional remains appropriate because Enterprise setup, assigned licenses, user IAM permissions and Preview status apply, even though the paid-only access classification should change to trial.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 93,
+    "field": "auth",
+    "status": "supported",
+    "url": "https://developers.fathom.ai/quickstart",
+    "explanation": "Opened vendor quickstart uses X-Api-Key with a user-scoped key; vendor API feature page separately confirms customer-installable OAuth applications.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 93,
+    "field": "access",
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Opened vendor FAQ explicitly includes API keys, webhooks and SDKs on Free and all other plans, with self-generation and no admin approval. Keys retain the creating user’s meeting permissions.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 93,
+    "field": "api",
+    "status": "supported",
+    "url": "https://developers.fathom.ai/quickstart",
+    "explanation": "Opened quickstart demonstrates GET /external/v1/meetings, cursor pagination, filters and transcript retrieval, supporting a focused REST meeting-data API. OAuth apps have different transcript-fetch constraints.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 93,
+    "field": "mcp",
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/mcp-server",
+    "explanation": "Fresh vendor meeting-notetaker page supplies api.fathom.ai/mcp, sign-in setup, all-plan availability and existing meeting-permission limits. This is not the unrelated Fathom analytics product.",
+    "reviewer": "independent_AI_doc_review"
+  },
+  {
+    "app_id": 93,
+    "field": "verdict",
+    "status": "supported",
+    "url": "https://www.fathom.ai/features/api",
+    "explanation": "Free self-issued keys plus a documented meeting API support build. This is a documentation assessment; no account signup or credentialed live execution was attempted.",
+    "reviewer": "independent_AI_doc_review"
+  }
+]

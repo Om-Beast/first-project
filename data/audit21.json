@@ -1,0 +1,302 @@
+[
+  {
+    "app_id": 25,
+    "field": "auth",
+    "before": [
+      "API key"
+    ],
+    "after": [
+      "API key"
+    ],
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "explanation": "Opened key-generation instructions confirm the API-key claim.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 25,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "explanation": "Opened all-plan availability statement confirms free-plan eligibility; addon install permissions still matter.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 25,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "HTTP"
+      ],
+      "breadth": "focused",
+      "resources": "Send/reply/delete messages, reactions, channels and channel message listing."
+    },
+    "after": {
+      "protocols": [
+        "HTTP"
+      ],
+      "breadth": "focused",
+      "resources": "Send/reply/delete messages, reactions, channels and channel message listing."
+    },
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "explanation": "Opened action list confirms focused HTTP messaging/channel surface.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 25,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+      "note": "Vendor guide describes a Pumble MCP server; API scope is narrower than full chat UI."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+      "note": "Vendor guide describes a Pumble MCP server; API scope is narrower than full chat UI."
+    },
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+    "explanation": "Fresh official setup guide confirms an action-capable MCP; MCP credentials differ from the API-key addon.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 25,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+    "explanation": "Documented all-plan credentials and callable operations support a build assessment; no authenticated execution was attempted.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 28,
+    "field": "auth",
+    "before": [
+      "token"
+    ],
+    "after": [
+      "token"
+    ],
+    "status": "supported",
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "explanation": "Opened quickstart confirms temporary and system-user Bearer access tokens.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 28,
+    "field": "access",
+    "before": "unknown",
+    "after": "unknown",
+    "status": "unresolved",
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "explanation": "Self-serve token onboarding was established, but explicit free/trial cost terms were not. Unknown is retained rather than labelled incorrect.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 28,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messages, templates, business accounts and phone numbers."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Messages, templates, business accounts and phone numbers."
+    },
+    "status": "supported",
+    "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+    "explanation": "Opened messaging, templates, webhook and phone/account setup guide supports the documented API surface.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 28,
+    "field": "mcp",
+    "before": {
+      "status": "unknown",
+      "url": null,
+      "note": "No conclusive official MCP evidence captured in this scoped pass; not a claim of absence."
+    },
+    "after": {
+      "status": "community",
+      "url": "https://github.com/saravanaspar/WBMCP",
+      "note": "Community wrapper targets the official WhatsApp Business Cloud API; it is not a Meta-authored or runtime-verified MCP server."
+    },
+    "status": "corrected",
+    "url": "https://github.com/saravanaspar/WBMCP",
+    "explanation": "Resolved unknown, not an initial factual error: a fresh repository search and opened developer README found a community WhatsApp Business Cloud API MCP. Official vendor-server availability remains unestablished.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 28,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://developers.facebook.com/docs/whatsapp/solution-providers/app-review/sample-submission/",
+    "explanation": "Reviewed permissions are required for solution providers serving other businesses, supporting a conditional verdict.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 31,
+    "field": "auth",
+    "before": [
+      "OAuth2"
+    ],
+    "after": [
+      "OAuth2"
+    ],
+    "status": "supported",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "explanation": "Fresh body text confirms the 2026 developer-token sunset. First pass already used current OAuth/Cloud-project onboarding.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 31,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "explanation": "Enabling the API grants Test access; production project access follows separate levels and approval.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 31,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Campaigns, ad groups, ads, reporting, audiences and keyword planning."
+    },
+    "after": {
+      "protocols": [
+        "REST",
+        "gRPC"
+      ],
+      "breadth": "broad",
+      "resources": "Campaigns, ad groups, ads, reporting, audiences and keyword planning."
+    },
+    "status": "corrected",
+    "url": "https://developers.google.com/google-ads/api/rest/overview",
+    "explanation": "First pass captured REST only; the official interface overview explicitly supports gRPC as well.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 31,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "note": "Google documents an open-source MCP server; official documentation does not imply support guarantees for every tool."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "note": "Google documents an open-source MCP server; official documentation does not imply support guarantees for every tool."
+    },
+    "status": "supported",
+    "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+    "explanation": "Opened vendor guide confirms MCP, transports, authentication and partial-write limits.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 31,
+    "field": "verdict",
+    "before": "conditional",
+    "after": "conditional",
+    "status": "supported",
+    "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+    "explanation": "Test-only access does not establish production eligibility, so conditional remains appropriate.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 35,
+    "field": "auth",
+    "before": [
+      "API key",
+      "OAuth2"
+    ],
+    "after": [
+      "API key",
+      "OAuth2",
+      "Basic"
+    ],
+    "status": "corrected",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+    "explanation": "First pass listed credential types but omitted supported HTTP Basic transport; Basic is now included.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 35,
+    "field": "access",
+    "before": "free",
+    "after": "free",
+    "status": "supported",
+    "url": "https://mailchimp.com/help/about-mailchimp-pricing-plans/?linkedin_auth_error=user_cancelled_login",
+    "explanation": "Free plan existence plus API account/key onboarding supports free entry, subject to feature limits.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 35,
+    "field": "api",
+    "before": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Audiences, campaigns, activity, reports and batch operations."
+    },
+    "after": {
+      "protocols": [
+        "REST"
+      ],
+      "breadth": "broad",
+      "resources": "Audiences, campaigns, activity, reports and batch operations."
+    },
+    "status": "supported",
+    "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+    "explanation": "Opened guide confirms audience/campaign data and analytics API use.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 35,
+    "field": "mcp",
+    "before": {
+      "status": "official",
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "note": "Official MCP searches documentation only; it cannot access or act on a Mailchimp account."
+    },
+    "after": {
+      "status": "official",
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "note": "Official MCP searches documentation only; it cannot access or act on a Mailchimp account."
+    },
+    "status": "supported",
+    "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+    "explanation": "Opened page explicitly limits MCP to documentation search, matching the scoped first-pass claim.",
+    "reviewer": "AI_document_audit"
+  },
+  {
+    "app_id": 35,
+    "field": "verdict",
+    "before": "build",
+    "after": "build",
+    "status": "supported",
+    "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+    "explanation": "Private-account key and third-party OAuth paths support implementation; docs MCP is not counted as account integration.",
+    "reviewer": "AI_document_audit"
+  }
+]

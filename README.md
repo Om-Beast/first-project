@@ -6,7 +6,7 @@
 
 An evidence-backed access audit of the exact 100 apps in Composio's AI Product Ops assignment. It answers a practical question: **can a developer obtain credentials, reach useful API actions, and turn this app into an agent toolkit today?**
 
-The public source browser includes every source file, a ZIP download and a read-only Git endpoint that can be cloned without an account. The case study is **one self-contained HTML page** at [`dist/index.html`](dist/index.html), with 100 searchable rows, expandable evidence, category comparisons, CSV/JSON exports, the agent workflow and an inspectable verification log.
+The public GitHub repository contains the complete source, evidence and verification artifacts and can be cloned without an account. The published report also offers a complete source ZIP. The case study is **one self-contained HTML page** at [`dist/index.html`](dist/index.html), with 100 searchable rows, expandable evidence, category comparisons, CSV/JSON exports, the agent workflow and an inspectable verification log.
 
 ## Reproduce in under a minute
 
@@ -119,3 +119,7 @@ This adapter uses the official SDK's toolkit list and cursor pagination to creat
 ## Publish the static source mirror
 
 After rebuilding the report, `python3 -m tools.publish_source` creates the source browser, complete ZIP and read-only Git HTTP assets. It publishes an explicit file allowlist and excludes raw retrieval transcripts, real credentials and hosting metadata. The mirror is a generated snapshot; edits belong in the source checkout.
+
+## Continuous verification and Pages deployment
+
+The GitHub Actions workflow rebuilds the preserved research, runs the contract tests, packages the source snapshot and uploads a Pages artifact. Once GitHub Pages is enabled with **GitHub Actions** as its publishing source, the workflow deploys `dist/` automatically. Before that initial account-level setting is enabled, the deployment step reports the missing configuration and skips publication. A green verification run alone does not establish a live Pages site.

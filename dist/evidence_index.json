@@ -1,0 +1,3893 @@
+{
+  "checked_at": "2026-11-24",
+  "sources": [
+    {
+      "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/intro-oauth-and-connected-apps.html",
+      "title": "REST API authorization",
+      "app_ids": [
+        1
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/connect-rest-api/guide/quickstart.html",
+      "title": "Developer quick start",
+      "app_ids": [
+        1
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/platform/hosted-mcp-servers/guide/hosted-mcp-servers-overview.html",
+      "title": "Hosted MCP servers",
+      "app_ids": [
+        1
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.hubspot.com/changelog/legacy-private-app-creation-sunset",
+      "title": "Legacy private app creation sunset",
+      "app_ids": [
+        2
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developers.hubspot.com/developer-platform-basics",
+      "title": "Developer platform basics",
+      "app_ids": [
+        2
+      ],
+      "fields": [
+        "access",
+        "api",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.hubspot.com/ai-tools/mcp?faq=5",
+      "title": "HubSpot MCP server",
+      "app_ids": [
+        2
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://pipedrive.readme.io/docs/getting-started",
+      "title": "API getting started",
+      "app_ids": [
+        3
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-http-status-codes",
+      "title": "API status codes",
+      "app_ids": [
+        3
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://support.pipedrive.com/en/article/mcp",
+      "title": "Native MCP",
+      "app_ids": [
+        3
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://attio.com/help/reference/apps/generating-an-api-key",
+      "title": "Generate an API key",
+      "app_ids": [
+        4
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.attio.com/rest-api/endpoint-reference/meetings/find-or-create-a-meeting",
+      "title": "REST API reference",
+      "app_ids": [
+        4
+      ],
+      "fields": [
+        "api",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://attio.com/apps/mcp",
+      "title": "Official MCP integration",
+      "app_ids": [
+        4
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://twenty.com/",
+      "title": "Twenty product and self-hosting",
+      "app_ids": [
+        5
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://twenty.com/pricing?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "Twenty developer features",
+      "app_ids": [
+        5
+      ],
+      "fields": [
+        "api",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/developers/extend/api.mdx",
+      "title": "Twenty first-party API source docs",
+      "app_ids": [
+        5
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://github.com/twentyhq/twenty/blob/main/packages/twenty-docs/user-guide/ai/capabilities/mcp.mdx",
+      "title": "Twenty first-party MCP source docs",
+      "app_ids": [
+        5
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.podio.com/index/api",
+      "title": "API conventions",
+      "app_ids": [
+        6
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developers.podio.com/index/faq",
+      "title": "API FAQ",
+      "app_ids": [
+        6
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/auth-request.html",
+      "title": "V8 authorization",
+      "app_ids": [
+        7
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v8/api-limits.html",
+      "title": "API limits by edition",
+      "app_ids": [
+        7
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.zoho.com/crm/developer/docs/mcp/overview.html",
+      "title": "Zoho CRM MCP",
+      "app_ids": [
+        7
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.close.com/api/overview",
+      "title": "API overview",
+      "app_ids": [
+        8
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://close.com/crm",
+      "title": "Trial onboarding",
+      "app_ids": [
+        8
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.close.com/integrations",
+      "title": "Build an integration",
+      "app_ids": [
+        8
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://developer.close.com/mcp",
+      "title": "Close MCP",
+      "app_ids": [
+        8
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://www.developer.copper.com/introduction/authentication.html",
+      "title": "Copper API authentication",
+      "app_ids": [
+        9
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://support.copper.com/en/articles/8823462-api-docs-and-tips",
+      "title": "API availability",
+      "app_ids": [
+        9
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.copper.com/mcp",
+      "title": "Copper MCP announcement",
+      "app_ids": [
+        9
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/token",
+      "title": "OAuth bearer-token flow",
+      "app_ids": [
+        10
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/docs/apikeys",
+      "title": "Obtaining an API key",
+      "app_ids": [
+        10
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+      "title": "MCP prerequisites",
+      "app_ids": [
+        10
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "title": "Security and authentication",
+      "app_ids": [
+        11
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://support.zendesk.com/hc/en-us/articles/4408889192858-Managing-API-token-access-to-the-Zendesk-API",
+      "title": "Token retirement",
+      "app_ids": [
+        11
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developer.zendesk.com/documentation/authentication/creating-and-using-oauth-tokens-with-the-api/",
+      "title": "Create OAuth tokens",
+      "app_ids": [
+        11
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+      "title": "Zendesk Bridge MCP",
+      "app_ids": [
+        11
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "title": "Authentication",
+      "app_ids": [
+        12
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developers.intercom.com/docs/build-an-integration/getting-started",
+      "title": "Workspace onboarding",
+      "app_ids": [
+        12
+      ],
+      "fields": [
+        "access",
+        "api",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "title": "Intercom MCP",
+      "app_ids": [
+        12
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.freshdesk.com/api/",
+      "title": "API reference",
+      "app_ids": [
+        13
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://support.freshdesk.com/support/solutions/articles/225439-what-are-the-rate-limits-for-the-api-calls-to-freshdesk",
+      "title": "API limits",
+      "app_ids": [
+        13
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://support.freshdesk.com/support/solutions/articles/50000014407-mcp-integration-frequently-asked-questions-faq-",
+      "title": "MCP FAQ",
+      "app_ids": [
+        13
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://dev.frontapp.com/reference/introduction",
+      "title": "Core API introduction",
+      "app_ids": [
+        14
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://help.front.com/en/articles/2178",
+      "title": "Front trials and plans",
+      "app_ids": [
+        14
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://dev.frontapp.com/me/docs/create-and-revoke-api-tokens",
+      "title": "API tokens and partner policy",
+      "app_ids": [
+        14
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://dev.frontapp.com/docs/mcp-server",
+      "title": "MCP server",
+      "app_ids": [
+        14
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "title": "API authentication",
+      "app_ids": [
+        15
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://support.usepylon.com/articles/4735104435-how-do-i-create-an-api-token",
+      "title": "Token permissions",
+      "app_ids": [
+        15
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://www.usepylon.com/pylon-facts",
+      "title": "Pylon product facts",
+      "app_ids": [
+        15
+      ],
+      "fields": [
+        "access",
+        "mcp",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.usepylon.com/integrations/mcp",
+      "title": "Independent primary-document follow-up",
+      "app_ids": [
+        15
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://support.liveagent.com/docs/api/v3/",
+      "title": "API v3 reference",
+      "app_ids": [
+        16
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://support.liveagent.com/567924-Documentation",
+      "title": "API trial workflow",
+      "app_ids": [
+        16
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://support.liveagent.com/647358-MCP-Integration-for-agents?r=1",
+      "title": "MCP integration",
+      "app_ids": [
+        16
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://help.plain.com/article/does-the-plain-mcp-server-support-api-key-authentication-h7d83qtfdzxo4h49x4oyklwx",
+      "title": "API versus MCP authentication",
+      "app_ids": [
+        17
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "mcp",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://help.plain.com/article/pricing",
+      "title": "Plans and trial",
+      "app_ids": [
+        17
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "title": "Inbox OAuth authentication",
+      "app_ids": [
+        18
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developer.helpscout.com/docs-api/",
+      "title": "Docs API authentication",
+      "app_ids": [
+        18
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://docs.helpscout.com/article/1140-mailbox-api",
+      "title": "API access by plan",
+      "app_ids": [
+        18
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.helpscout.com/article/1779-help-scout-mcp-server",
+      "title": "Official MCP",
+      "app_ids": [
+        18
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "title": "API authentication",
+      "app_ids": [
+        19
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developers.gorgias.com/docs/overview",
+      "title": "Public app onboarding",
+      "app_ids": [
+        19
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://helpcenter.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546",
+      "title": "Official MCP setup",
+      "app_ids": [
+        19
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.gladly.com/rest/",
+      "title": "Gladly REST API",
+      "app_ids": [
+        20
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.slack.dev/apis/web-api/using-web-api-with-postman/",
+      "title": "Using the Web API with Postman",
+      "app_ids": [
+        21
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://docs.slack.dev/ai/slack-mcp-server/",
+      "title": "Slack MCP server overview",
+      "app_ids": [
+        21
+      ],
+      "fields": [
+        "api",
+        "mcp",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.twilio.com/docs/iam/api",
+      "title": "Our API: the basics",
+      "app_ids": [
+        22
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://www.twilio.com/docs/usage/trials",
+      "title": "Twilio trial account",
+      "app_ids": [
+        22
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.twilio.com/articles/43750712673819",
+      "title": "Twilio MCP availability",
+      "app_ids": [
+        22
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/",
+      "title": "Cliq REST API",
+      "app_ids": [
+        23
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://www.zoho.com/cliq/plan-comparison.html?zredirect=f",
+      "title": "Cliq plan comparison",
+      "app_ids": [
+        23
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.zoho.com/cliq/help/platform/zoho-cliq-mcp.html",
+      "title": "Guide to Zoho Cliq MCP",
+      "app_ids": [
+        23
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://open.larksuite.com/document/tools-and-resources/api-explorer-guide",
+      "title": "API Explorer Guide",
+      "app_ids": [
+        24
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://open.larksuite.com/document/home/introduction-to-custom-app-development/testing-enterprise-and-personnel-functions",
+      "title": "Test companies and users",
+      "app_ids": [
+        24
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://open.larksuite.com/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN",
+      "title": "Apply for API permission",
+      "app_ids": [
+        24
+      ],
+      "fields": [
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+      "title": "OpenAPI MCP overview",
+      "app_ids": [
+        24
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "title": "Pumble API Overview",
+      "app_ids": [
+        25
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://pumble.com/learn/pumble/ai-automation-guide/",
+      "title": "AI and automation in Pumble",
+      "app_ids": [
+        25
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+      "title": "Pumble MCP setup — opened audit",
+      "app_ids": [
+        25
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://support.discord.com/hc/en-us/articles/115002192352-Automated-User-Accounts-Self-Bots",
+      "title": "Automated User Accounts",
+      "app_ids": [
+        26
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.discord.com/developers/docs/interactions/slash-commands",
+      "title": "Application Commands",
+      "app_ids": [
+        26
+      ],
+      "fields": [
+        "api",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://github.com/elmokulc/pydiscord-mcp-server",
+      "title": "Community MCP repository — opened primary source",
+      "app_ids": [
+        26
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://core.telegram.org/bots",
+      "title": "Bots: introduction for developers",
+      "app_ids": [
+        27
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://core.telegram.org/bots/api",
+      "title": "Telegram Bot API",
+      "app_ids": [
+        27
+      ],
+      "fields": [
+        "api"
+      ]
+    },
+    {
+      "url": "https://github.com/Moreti2002/mcp-telegram",
+      "title": "Community MCP repository — opened primary source",
+      "app_ids": [
+        27
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview/",
+      "title": "WhatsApp Business Platform",
+      "app_ids": [
+        28
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/docs/graph-api/reference/whats-app-business-account/",
+      "title": "WhatsApp Business Account reference",
+      "app_ids": [
+        28
+      ],
+      "fields": [
+        "api",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started/",
+      "title": "WhatsApp Cloud API Get Started — opened audit",
+      "app_ids": [
+        28
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/docs/whatsapp/solution-providers/app-review/sample-submission/",
+      "title": "WhatsApp solution-provider review",
+      "app_ids": [
+        28
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://github.com/saravanaspar/WBMCP",
+      "title": "Community MCP repository — opened primary source",
+      "app_ids": [
+        28
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.aircall.io/docs/authentication",
+      "title": "Authentication overview",
+      "app_ids": [
+        29
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developer.aircall.io/docs/oauth",
+      "title": "OAuth implementation guide",
+      "app_ids": [
+        29
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.aircall.io/docs/mcp-faqs",
+      "title": "MCP FAQs",
+      "app_ids": [
+        29
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "title": "Authentication",
+      "app_ids": [
+        30
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developer.vonage.com/en/dashboard/getting-started",
+      "title": "Dashboard Getting Started",
+      "app_ids": [
+        30
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.vonage.com/en/mcp-server/technical-details",
+      "title": "MCP technical details",
+      "app_ids": [
+        30
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+      "title": "Google Ads MCP integration guide",
+      "app_ids": [
+        31
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "mcp",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "title": "Access levels and permissible use",
+      "app_ids": [
+        31
+      ],
+      "fields": [
+        "api",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/developer-token",
+      "title": "Developer token migration — opened audit",
+      "app_ids": [
+        31
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.google.com/google-ads/api/rest/overview",
+      "title": "REST interface overview — audit",
+      "app_ids": [
+        31
+      ],
+      "fields": [
+        "api"
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/docs/business-management-apis/2tier-bm-solution/pre-app-review-development/",
+      "title": "Pre-App Review Development",
+      "app_ids": [
+        32
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/docs/graph-api/overview/rate-limiting/",
+      "title": "Graph API rate limits",
+      "app_ids": [
+        32
+      ],
+      "fields": [
+        "api",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/docs/business-management-apis/system-users/overview/",
+      "title": "System Users overview",
+      "app_ids": [
+        32
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/lms-faq?view=li-lms-2026-01",
+      "title": "Marketing API FAQ",
+      "app_ids": [
+        33
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-01",
+      "title": "Marketing API access tiers",
+      "app_ids": [
+        33
+      ],
+      "fields": [
+        "access",
+        "api",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation?fp_ref=getfreetrail&fp_sid=api-facts",
+      "title": "HighLevel API Documentation",
+      "app_ids": [
+        34
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005741",
+      "title": "HighLevel MCP Server",
+      "app_ids": [
+        34
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+      "title": "Marketing API authentication",
+      "app_ids": [
+        35
+      ],
+      "fields": [
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+      "title": "Create an account",
+      "app_ids": [
+        35
+      ],
+      "fields": [
+        "access",
+        "api",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+      "title": "MCP server",
+      "app_ids": [
+        35
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://mailchimp.com/help/about-mailchimp-pricing-plans/?linkedin_auth_error=user_cancelled_login",
+      "title": "Mailchimp plans — audit",
+      "app_ids": [
+        35
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "title": "Authenticate API requests",
+      "app_ids": [
+        36
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/create_a_test_account",
+      "title": "Create a test account",
+      "app_ids": [
+        36
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+      "title": "Klaviyo MCP server",
+      "app_ids": [
+        36
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://help.systeme.io/article/2323-how-to-use-systeme-io-public-api",
+      "title": "How to use the systeme.io public API",
+      "app_ids": [
+        37
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://systeme.io/pricing",
+      "title": "Systeme.io Pricing",
+      "app_ids": [
+        37
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "title": "Authentication and authorization",
+      "app_ids": [
+        38
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+      "title": "Connect app",
+      "app_ids": [
+        38
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+      "title": "Access tiers",
+      "app_ids": [
+        38
+      ],
+      "fields": [
+        "api",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api?entity=folder-34203612-995a4593-61de-4558-9b26-6c8becae85e4",
+      "title": "Threads API — Meta collection",
+      "app_ids": [
+        39
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/get-access-tokens-and-permissions",
+      "title": "Threads access tokens — opened official source",
+      "app_ids": [
+        39
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/quickstart-php?8b09db95_page=12",
+      "title": "SendGrid Email API Quickstart",
+      "app_ids": [
+        40
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://www.twilio.com/docs/sendgrid/ui/account-and-settings/upgrading-your-plan?save_locale=en",
+      "title": "Upgrade your plan",
+      "app_ids": [
+        40
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.twilio.com/en-us/blog/developers/community/build-a-sendgrid-mcp-server-for-ai-email-workflows",
+      "title": "Build a SendGrid MCP Server",
+      "app_ids": [
+        40
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://shopify.dev/docs/api/usage/authentication",
+      "title": "Shopify API authentication",
+      "app_ids": [
+        41
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://shopify.dev/docs/storefronts/themes/tools/development-stores",
+      "title": "Dev stores for themes",
+      "app_ids": [
+        41
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+      "title": "REST API authentication",
+      "app_ids": [
+        42
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+      "title": "WooCommerce REST API",
+      "app_ids": [
+        42
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.woocommerce.com/docs/features/mcp/",
+      "title": "MCP integration",
+      "app_ids": [
+        42
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://support.bigcommerce.com/s/article/Store-API-Accounts?language=en_US",
+      "title": "Managing API Accounts and Webhooks",
+      "app_ids": [
+        43
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+      "title": "Get started with SCAPI",
+      "app_ids": [
+        44
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developer.salesforce.com/docs/commerce/sfra/guide/b2c-get-started-sandboxes.html",
+      "title": "Get started with sandboxes",
+      "app_ids": [
+        44
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+      "title": "Getting started with web APIs",
+      "app_ids": [
+        45
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "title": "Commerce authentication",
+      "app_ids": [
+        45
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.squarespace.com/commerce-apis/v2/products",
+      "title": "Products API",
+      "app_ids": [
+        46
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://support.squarespace.com/hc/en-us/articles/236297987-Squarespace-API-keys",
+      "title": "Squarespace API keys",
+      "app_ids": [
+        46
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.squarespace.com/mcp/overview",
+      "title": "Squarespace MCP overview",
+      "app_ids": [
+        46
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+      "title": "Set up your dev environment",
+      "app_ids": [
+        47
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+      "title": "First API request",
+      "app_ids": [
+        47
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://gumroad.com/mcp",
+      "title": "Gumroad MCP",
+      "app_ids": [
+        48
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "mcp",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://gumroad.com/pricing",
+      "title": "Gumroad pricing",
+      "app_ids": [
+        48
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://gumroad.com/help/article/76-license-keys",
+      "title": "License keys",
+      "app_ids": [
+        48
+      ],
+      "fields": [
+        "api"
+      ]
+    },
+    {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+      "title": "Onboarding as a Developer",
+      "app_ids": [
+        49
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer",
+      "title": "Private developer registration",
+      "app_ids": [
+        49
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://www.fanbasis.com/auth/setup/signup",
+      "title": "FanBasis signup",
+      "app_ids": [
+        50
+      ],
+      "fields": [
+        "summary"
+      ]
+    },
+    {
+      "url": "https://support.fanbasis.com/",
+      "title": "Commas Knowledge Base",
+      "app_ids": [
+        50
+      ],
+      "fields": [
+        "access",
+        "api",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.dataforseo.com/v3/auth/",
+      "title": "Authentication",
+      "app_ids": [
+        51
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+      "title": "Free trial",
+      "app_ids": [
+        51
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+      "title": "Getting started with API",
+      "app_ids": [
+        52
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://seranking.com/api-pricing.html",
+      "title": "SE Ranking API pricing",
+      "app_ids": [
+        52
+      ],
+      "fields": [
+        "mcp",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+      "title": "About API v3",
+      "app_ids": [
+        53
+      ],
+      "fields": [
+        "access",
+        "api",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.ahrefs.com/en/api/reference/public/post-domain-rating-free",
+      "title": "Domain rating free",
+      "app_ids": [
+        53
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+      "title": "Ahrefs MCP",
+      "app_ids": [
+        53
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+      "title": "Ahrefs API introduction",
+      "app_ids": [
+        53
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/api/authentication",
+      "title": "Authentication",
+      "app_ids": [
+        54
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://mrscraper.com/pricing",
+      "title": "MrScraper pricing",
+      "app_ids": [
+        54
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "title": "MrScraper MCP",
+      "app_ids": [
+        54
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.apify.com/agents/quickstart",
+      "title": "Agent quickstart",
+      "app_ids": [
+        55
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.apify.com/mcp",
+      "title": "Apify MCP server",
+      "app_ids": [
+        55
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://www.firecrawl.dev/blog/firecrawl-keyless-launch",
+      "title": "Firecrawl Keyless launch",
+      "app_ids": [
+        56
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "mcp",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.firecrawl.dev/pricing?v=20261011",
+      "title": "Firecrawl pricing",
+      "app_ids": [
+        56
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://docs.brightdata.com/api-reference/web-scraper-api/management-apis/monitor-progress",
+      "title": "Monitor progress API",
+      "app_ids": [
+        57
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://docs.brightdata.com/ai/mcp-server/overview",
+      "title": "Bright Data MCP overview",
+      "app_ids": [
+        57
+      ],
+      "fields": [
+        "access",
+        "mcp",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://brightdata.com/blog/ai/ollama-with-web-mcp",
+      "title": "Web MCP integration",
+      "app_ids": [
+        57
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "title": "Sherlock repository",
+      "app_ids": [
+        58
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/installation.mdx",
+      "title": "Official installation documentation",
+      "app_ids": [
+        58
+      ],
+      "fields": [
+        "access",
+        "api"
+      ]
+    },
+    {
+      "url": "https://www.waterfall.io/",
+      "title": "Waterfall homepage",
+      "app_ids": [
+        59
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://www.waterfall.io/book-a-call",
+      "title": "Book a demo",
+      "app_ids": [
+        59
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.waterfall.io/pricing",
+      "title": "Waterfall pricing",
+      "app_ids": [
+        59
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/authentication",
+      "title": "Waterfall API authentication",
+      "app_ids": [
+        59
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/introduction",
+      "title": "Waterfall API introduction",
+      "app_ids": [
+        59
+      ],
+      "fields": [
+        "api"
+      ]
+    },
+    {
+      "url": "https://docs.waterfall.io/v1/api-keys-overview",
+      "title": "API keys management",
+      "app_ids": [
+        59
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://university.clay.com/docs/clay-api-cli",
+      "title": "Clay API and CLI",
+      "app_ids": [
+        60
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://university.clay.com/docs/guide-find-clay-api-key",
+      "title": "Find Clay API key",
+      "app_ids": [
+        60
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://university.clay.com/docs/connect-to-clay-mcp",
+      "title": "Connect your platform to Clay MCP",
+      "app_ids": [
+        60
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/graphql/guides/forming-calls-with-graphql",
+      "title": "GraphQL calls",
+      "app_ids": [
+        61
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+      "title": "REST authentication",
+      "app_ids": [
+        61
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/how-tos/copilot-in-your-ide/copilot-for-common-tasks/use-the-github-mcp-server",
+      "title": "GitHub MCP",
+      "app_ids": [
+        61
+      ],
+      "fields": [
+        "access",
+        "mcp",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://vercel.com/docs/rest-api",
+      "title": "Vercel REST API",
+      "app_ids": [
+        62
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://vercel.com/docs/sign-in-with-vercel/authorization-server-api",
+      "title": "Vercel OAuth",
+      "app_ids": [
+        62
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://vercel.com/docs/plans/hobby",
+      "title": "Hobby plan",
+      "app_ids": [
+        62
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "title": "Vercel MCP",
+      "app_ids": [
+        62
+      ],
+      "fields": [
+        "access",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "title": "Netlify API quickstart",
+      "app_ids": [
+        63
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+      "title": "Netlify credit plans",
+      "app_ids": [
+        63
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
+      "title": "Netlify agent setup",
+      "app_ids": [
+        63
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.cloudflare.com/api/overview/",
+      "title": "Cloudflare API",
+      "app_ids": [
+        64
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+      "title": "Create API token",
+      "app_ids": [
+        64
+      ],
+      "fields": [
+        "access",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developers.cloudflare.com/fundamentals/account/create-account/",
+      "title": "Cloudflare accounts",
+      "app_ids": [
+        64
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+      "title": "Cloudflare MCP",
+      "app_ids": [
+        64
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/reference/api/introduction",
+      "title": "Supabase Management API",
+      "app_ids": [
+        65
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://supabase.com/pricing",
+      "title": "Supabase pricing",
+      "app_ids": [
+        65
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://supabase.com/features/mcp-server",
+      "title": "Supabase MCP",
+      "app_ids": [
+        65
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+      "title": "Project API keys",
+      "app_ids": [
+        65
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/guides/api/creating-routes",
+      "title": "Generated Data API routes",
+      "app_ids": [
+        65
+      ],
+      "fields": [
+        "api"
+      ]
+    },
+    {
+      "url": "https://supabase.com/docs/guides/graphql",
+      "title": "Independent primary-document follow-up",
+      "app_ids": [
+        65
+      ],
+      "fields": [
+        "api"
+      ]
+    },
+    {
+      "url": "https://neo4j.com/docs/aura/api/authentication/",
+      "title": "Aura authentication",
+      "app_ids": [
+        66
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://neo4j.com/docs/aura/api/overview/",
+      "title": "Aura API",
+      "app_ids": [
+        66
+      ],
+      "fields": [
+        "access",
+        "api",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://neo4j.com/docs/mcp/current/authentication/",
+      "title": "Neo4j MCP authentication",
+      "app_ids": [
+        66
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "title": "Snowflake REST authentication",
+      "app_ids": [
+        67
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+      "title": "Snowflake trial",
+      "app_ids": [
+        67
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp?gclsrc=aw.ds",
+      "title": "Snowflake-managed MCP",
+      "app_ids": [
+        67
+      ],
+      "fields": [
+        "mcp",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/?msockid=23693c46da786f1224f72aa3dbc86e21",
+      "title": "Atlas API authentication",
+      "app_ids": [
+        68
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/",
+      "title": "Deploy a free cluster",
+      "app_ids": [
+        68
+      ],
+      "fields": [
+        "access",
+        "api",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.mongodb.com/docs/mcp-server/overview/?msockid=3b66bbb3af6963150203ad3fae3f6222",
+      "title": "MongoDB MCP overview",
+      "app_ids": [
+        68
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://www.mongodb.com/docs/mcp-server/get-started/",
+      "title": "MongoDB MCP setup",
+      "app_ids": [
+        68
+      ],
+      "fields": [
+        "access",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://www.mongodb.com/docs/mcp-server/prerequisites/",
+      "title": "MCP prerequisites and AI client access",
+      "app_ids": [
+        68
+      ],
+      "fields": [
+        "access",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+      "title": "Datadog credentials",
+      "app_ids": [
+        69
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.datadoghq.com/account_management/personal-access-tokens/",
+      "title": "Datadog PATs",
+      "app_ids": [
+        69
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://www.datadoghq.com/free-datadog-trial/",
+      "title": "Datadog trial",
+      "app_ids": [
+        69
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://docs.datadoghq.com/mcp_server/setup/?lang_pref=en",
+      "title": "Datadog MCP setup",
+      "app_ids": [
+        69
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.datadoghq.com/extend/integrations/api_integration/?lang_pref=en",
+      "title": "Datadog API integration",
+      "app_ids": [
+        69
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.sentry.io/api/auth/",
+      "title": "Sentry API authentication",
+      "app_ids": [
+        70
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://sentry.io/pricing/",
+      "title": "Sentry pricing",
+      "app_ids": [
+        70
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://mcp.sentry.dev/",
+      "title": "Sentry MCP",
+      "app_ids": [
+        70
+      ],
+      "fields": [
+        "auth",
+        "mcp",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.notion.com/reference/authentication",
+      "title": "Notion authentication",
+      "app_ids": [
+        71
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://www.notion.com/help/create-integrations-with-the-notion-api",
+      "title": "Notion API connections",
+      "app_ids": [
+        71
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.notion.com/guides/mcp/overview",
+      "title": "Notion MCP overview",
+      "app_ids": [
+        71
+      ],
+      "fields": [
+        "mcp",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://support.airtable.com/articles/9934989703-Creating-personal-access-tokens",
+      "title": "Airtable PATs",
+      "app_ids": [
+        72
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.airtable.com/platform/mcp",
+      "title": "Airtable MCP",
+      "app_ids": [
+        72
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "mcp",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://support.airtable.com/articles/9897799762-Using-the-Airtable-MCP-server",
+      "title": "Using Airtable MCP",
+      "app_ids": [
+        72
+      ],
+      "fields": [
+        "access",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://linear.app/developers/graphql?noRedirect=1",
+      "title": "Linear GraphQL",
+      "app_ids": [
+        73
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://linear.app/pricing",
+      "title": "Linear pricing",
+      "app_ids": [
+        73
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://linear.app/docs/mcp",
+      "title": "Linear MCP",
+      "app_ids": [
+        73
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/jira/software/rest/intro",
+      "title": "Jira REST API",
+      "app_ids": [
+        74
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://support.atlassian.com/jira-cloud-administration/docs/explore-jira-cloud-plans",
+      "title": "Jira plans",
+      "app_ids": [
+        74
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.atlassian.com/cloud/rovo-mcp/guides/authentication-and-authorization/",
+      "title": "Rovo MCP authorization",
+      "app_ids": [
+        74
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.asana.com/docs/authentication",
+      "title": "Asana authentication",
+      "app_ids": [
+        75
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.asana.com/docs/quick-start",
+      "title": "Asana API quickstart",
+      "app_ids": [
+        75
+      ],
+      "fields": [
+        "api",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.asana.com/docs/integrating-with-asanas-mcp-server",
+      "title": "Asana V2 MCP",
+      "app_ids": [
+        75
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "title": "Monday authentication",
+      "app_ids": [
+        76
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://support.monday.com/hc/en-us/articles/34060974011794-Using-external-agents-on-monday-FAQs",
+      "title": "Monday external agents",
+      "app_ids": [
+        76
+      ],
+      "fields": [
+        "api",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developer.monday.com/api-reference/docs/integrate-with-monday-mcp?trk=article-ssr-frontend-pulse_little-text-block",
+      "title": "Monday MCP",
+      "app_ids": [
+        76
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://support.monday.com/hc/en-us/articles/28515034903314-Get-started-with-monday-MCP",
+      "title": "Monday MCP access",
+      "app_ids": [
+        76
+      ],
+      "fields": [
+        "access",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.clickup.com/docs/authentication",
+      "title": "ClickUp authentication",
+      "app_ids": [
+        77
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.clickup.com/hc/en-us/articles/6303422883095-Create-your-own-app-with-the-ClickUp-API",
+      "title": "ClickUp API availability",
+      "app_ids": [
+        77
+      ],
+      "fields": [
+        "access",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+      "title": "ClickUp MCP",
+      "app_ids": [
+        77
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://help.coda.io/hc/en-us/articles/39555941038349-Does-Coda-have-an-API",
+      "title": "Generate document API tokens",
+      "app_ids": [
+        78
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+      "title": "Coda MCP setup",
+      "app_ids": [
+        78
+      ],
+      "fields": [
+        "access",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+      "title": "Smartsheet API introduction",
+      "app_ids": [
+        79
+      ],
+      "fields": [
+        "access",
+        "api",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+      "title": "Smartsheet authentication",
+      "app_ids": [
+        79
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs",
+      "title": "Trial limitations",
+      "app_ids": [
+        79
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+      "title": "Smartsheet MCP install",
+      "app_ids": [
+        79
+      ],
+      "fields": [
+        "access",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+      "title": "Harvest authentication",
+      "app_ids": [
+        80
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+      "title": "Harvest API overview",
+      "app_ids": [
+        80
+      ],
+      "fields": [
+        "api",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://www.getharvest.com/pricing",
+      "title": "Harvest pricing",
+      "app_ids": [
+        80
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.getharvest.com/api-v2/imports-api/imports/imports/",
+      "title": "Harvest imports",
+      "app_ids": [
+        80
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://docs.stripe.com/keys",
+      "title": "API keys",
+      "app_ids": [
+        81
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.stripe.com/mcp",
+      "title": "Stripe MCP",
+      "app_ids": [
+        81
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://plaid.com/docs/api/",
+      "title": "Plaid API overview",
+      "app_ids": [
+        82
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different",
+      "title": "Plaid environments and plans",
+      "app_ids": [
+        82
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://plaid.com/docs/sandbox/",
+      "title": "Plaid Sandbox overview",
+      "app_ids": [
+        82
+      ],
+      "fields": [
+        "access",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://plaid.com/docs/api/oauth/",
+      "title": "Plaid OAuth API reference",
+      "app_ids": [
+        82
+      ],
+      "fields": [
+        "auth"
+      ]
+    },
+    {
+      "url": "https://plaid.com/docs/api/accounts/",
+      "title": "Plaid Accounts API",
+      "app_ids": [
+        82
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+      "title": "Binance Spot REST API",
+      "app_ids": [
+        83
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.binance.com/en/docs/introduction",
+      "title": "Binance developer introduction",
+      "app_ids": [
+        83
+      ],
+      "fields": [
+        "access",
+        "api"
+      ]
+    },
+    {
+      "url": "https://docs.nmi.com/reference/authentication",
+      "title": "NMI authentication (context only)",
+      "app_ids": [
+        84
+      ],
+      "fields": [
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://api.paygent.tech/docs",
+      "title": "Different Paygent product (identity warning)",
+      "app_ids": [
+        84
+      ],
+      "fields": [
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/api",
+      "title": "iPayX FX Audit API",
+      "app_ids": [
+        85
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://www.ipayx.ai/developers",
+      "title": "iPayX developer documentation",
+      "app_ids": [
+        85
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://www.ipayx.ai/docs/mcp-server",
+      "title": "iPayX MCP documentation",
+      "app_ids": [
+        85
+      ],
+      "fields": [
+        "access",
+        "mcp",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0",
+      "title": "QuickBooks OAuth 2.0",
+      "app_ids": [
+        86
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started/get-client-id-and-client-secret",
+      "title": "Get app credentials",
+      "app_ids": [
+        86
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html",
+      "title": "Publish QuickBooks app",
+      "app_ids": [
+        86
+      ],
+      "fields": [
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.xero.com/documentation/getting-started-guide/",
+      "title": "Xero getting started",
+      "app_ids": [
+        87
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.xero.com/pricing",
+      "title": "Xero developer pricing",
+      "app_ids": [
+        87
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.xero.com/documentation/guides/remote-mcp/overview",
+      "title": "Xero Developer Remote MCP",
+      "app_ids": [
+        87
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://developer.xero.com/documentation/api/accounting/requests-and-responses",
+      "title": "Xero accounting HTTP requests and responses",
+      "app_ids": [
+        87
+      ],
+      "fields": [
+        "api"
+      ]
+    },
+    {
+      "url": "https://developer.brex.com/guides/authentication",
+      "title": "Brex authentication",
+      "app_ids": [
+        88
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developer.brex.com/docs/faq",
+      "title": "Brex API FAQ",
+      "app_ids": [
+        88
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "title": "Ramp authorization",
+      "app_ids": [
+        89
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/guides/getting-started",
+      "title": "Ramp quickstart",
+      "app_ids": [
+        89
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.ramp.com/developer-api/v1/ramp-mcp",
+      "title": "Ramp MCP",
+      "app_ids": [
+        89
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://pitchbook.com/help/PitchBook-api",
+      "title": "PitchBook API",
+      "app_ids": [
+        90
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://pitchbook.com/help/data-feed-api-crm-direct-data-solutions",
+      "title": "PitchBook Direct Data",
+      "app_ids": [
+        90
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "title": "Create and manage notebooks API",
+      "app_ids": [
+        91
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/reference/rpc/google.cloud.notebooklm.v1alpha",
+      "title": "NotebookLM Enterprise RPC reference",
+      "app_ids": [
+        91
+      ],
+      "fields": [
+        "api",
+        "auth"
+      ]
+    },
+    {
+      "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-licensing",
+      "title": "Independent primary-document follow-up",
+      "app_ids": [
+        91
+      ],
+      "fields": [
+        "access"
+      ]
+    },
+    {
+      "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+      "title": "Otter public API",
+      "app_ids": [
+        92
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+      "title": "Otter MCP",
+      "app_ids": [
+        92
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://www.fathom.ai/features/api",
+      "title": "Fathom meeting API",
+      "app_ids": [
+        93
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://help.fathom.video/en/articles/8368641",
+      "title": "Fathom public API help",
+      "app_ids": [
+        93
+      ],
+      "fields": [
+        "access",
+        "api"
+      ]
+    },
+    {
+      "url": "https://www.fathom.ai/features/mcp-server",
+      "title": "Fathom meeting MCP",
+      "app_ids": [
+        93
+      ],
+      "fields": [
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://help.consensus.app/en/articles/16516328-the-consensus-api",
+      "title": "Consensus API (October 2026)",
+      "app_ids": [
+        94
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.consensus.app/docs/mcp",
+      "title": "Consensus MCP",
+      "app_ids": [
+        94
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://reducto.ai/developers",
+      "title": "Reducto developers",
+      "app_ids": [
+        95
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://reducto.ai/pricing/",
+      "title": "Reducto pricing",
+      "app_ids": [
+        95
+      ],
+      "fields": [
+        "access",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.reducto.ai/",
+      "title": "Reducto documentation",
+      "app_ids": [
+        95
+      ],
+      "fields": [
+        "api",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "title": "Devin authentication",
+      "app_ids": [
+        96
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "title": "Devin API overview",
+      "app_ids": [
+        96
+      ],
+      "fields": [
+        "api",
+        "summary"
+      ]
+    },
+    {
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+      "title": "Devin MCP",
+      "app_ids": [
+        96
+      ],
+      "fields": [
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://higgsfield.ai/blog/higgsfield-cli",
+      "title": "Higgsfield CLI guide",
+      "app_ids": [
+        97
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "mcp",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://higgsfield.ai/creator-hub/help-center/integrations/how-do-i-access-higgsfield-via-cli",
+      "title": "CLI and Skills help",
+      "app_ids": [
+        97
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "title": "Official Mermaid CLI repository",
+      "app_ids": [
+        98
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://transcriptapi.com/docs/getting-started/curl/",
+      "title": "TranscriptAPI cURL quickstart",
+      "app_ids": [
+        99
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "title": "TranscriptAPI MCP",
+      "app_ids": [
+        99
+      ],
+      "fields": [
+        "api",
+        "auth",
+        "mcp"
+      ]
+    },
+    {
+      "url": "https://support.grain.com/en/articles/15507288-grain-api",
+      "title": "Grain API",
+      "app_ids": [
+        100
+      ],
+      "fields": [
+        "access",
+        "api",
+        "auth",
+        "summary",
+        "verdict"
+      ]
+    },
+    {
+      "url": "https://developers.grain.com/mcp/faq.html",
+      "title": "Grain MCP FAQ",
+      "app_ids": [
+        100
+      ],
+      "fields": [
+        "access",
+        "auth",
+        "mcp"
+      ]
+    }
+  ],
+  "internal_retrieval_digests": [
+    {
+      "file": "adjudication-open.json",
+      "sha256": "79e43cdc6f740164b76cf13a59372d33836c2c03bc8efd75ecae1751c74ef962",
+      "bytes": 30573
+    },
+    {
+      "file": "audit01-open-2.json",
+      "sha256": "956d2882f89fcc1ca20366f34a86988cb9ab04734bcbbda4e8437ca984c2874c",
+      "bytes": 30381
+    },
+    {
+      "file": "audit01-open-3.json",
+      "sha256": "edfb4b094275c86793fc9531a72ab6a793983c5aca55f33462703edb969431f7",
+      "bytes": 26850
+    },
+    {
+      "file": "audit01-open.json",
+      "sha256": "0f718a5293633824e89a703c558e45b9c56523fa87da46e6060cdaca98747893",
+      "bytes": 27801
+    },
+    {
+      "file": "commerce-data-01.json",
+      "sha256": "8a5173d7eee45473d5c29aa376e9a6cff0ddd7b3513d05860f10cd07efe56b80",
+      "bytes": 27418
+    },
+    {
+      "file": "commerce-data-02.json",
+      "sha256": "22b1d7e96201211530fb6d3c96adb83037193c2f51b12fd51641ca8b607dd125",
+      "bytes": 36217
+    },
+    {
+      "file": "commerce-data-03.json",
+      "sha256": "9a3534503605a8535eb3a8f61dfbdd0e0ef086e190acf3bdc92d802aad1f6461",
+      "bytes": 36913
+    },
+    {
+      "file": "commerce-data-04.json",
+      "sha256": "ac841c302a918c1321758c3ccd06e3e80328b4165dafd9b7cf5ce110f7a0a336",
+      "bytes": 26746
+    },
+    {
+      "file": "commerce-data-05.json",
+      "sha256": "280c99130f86d8cf85e4fe704ac500c5878fca2d71b14d76001c63be4f67c6d5",
+      "bytes": 37559
+    },
+    {
+      "file": "commerce-data-06.json",
+      "sha256": "1ec3f6e14873e432a834ec37360554b8d3e88ece462f4447e2d391ddcdd46594",
+      "bytes": 38438
+    },
+    {
+      "file": "commerce-data-07.json",
+      "sha256": "d70a13546293a9da4e97be8b86477cd6a75977513ca1a63fdefcdf7a88f24b04",
+      "bytes": 31736
+    },
+    {
+      "file": "commerce-data-08.json",
+      "sha256": "bd315d219dbfa2d4370ca6a26233ea9a1bb97c693d7dd548922002e8b733235e",
+      "bytes": 28058
+    },
+    {
+      "file": "commerce-data-09.json",
+      "sha256": "0847440cb7090d597cebddcccd77df2d4a49216246e6d7e03fbc653a6bc92dc0",
+      "bytes": 28953
+    },
+    {
+      "file": "commerce-data-audit-01.json",
+      "sha256": "c53bc8c6a01774e9f019bf18e41f75ed86b5b67346e9516999d5db013309dc73",
+      "bytes": 34470
+    },
+    {
+      "file": "commerce-data-audit-02.json",
+      "sha256": "d803a9e880a4e9aaa300d5de48a02064ab3b87d0b360ee1289b43320161ceb8e",
+      "bytes": 318
+    },
+    {
+      "file": "commerce-data-audit-03.json",
+      "sha256": "9aefecf80e4357bda8ec5e1e651077bc05022b286fd2572b0c44bb2875b21973",
+      "bytes": 301
+    },
+    {
+      "file": "commerce-data-audit-04.json",
+      "sha256": "aead80ecfbce3a32329a0ed64cfa0b1680f2cce48263ae36c84e5b0633c7ddae",
+      "bytes": 15405
+    },
+    {
+      "file": "commerce-data-audit-05.json",
+      "sha256": "5bf878cada01f06971585dd1b77ea4e90fb5cd2b66770810180a9eb01f8275e1",
+      "bytes": 33395
+    },
+    {
+      "file": "commerce-data-audit-06.json",
+      "sha256": "25c5ba1b19cab8e33c41007057fe45f39c93c85b12c571df1f2c1c897eb9be10",
+      "bytes": 29251
+    },
+    {
+      "file": "comms-marketing-01.json",
+      "sha256": "1457f35f89380ba958e5e48282998d624bd75395d42396b3cd91ddc029236794",
+      "bytes": 18044
+    },
+    {
+      "file": "comms-marketing-02.json",
+      "sha256": "940110c69824af13e70032238b18a329432368ac504e93a3cb2f64196ef04dd5",
+      "bytes": 22008
+    },
+    {
+      "file": "comms-marketing-03.json",
+      "sha256": "542014a38338b3e83749e91b2de1d54fc562ae051cbbf7485ceaa9d6b17a3831",
+      "bytes": 25542
+    },
+    {
+      "file": "comms-marketing-04.json",
+      "sha256": "fee7cda4e22be9121d38117d8d343ceb1bb8f4e0a769161d2c2c5ade93f50812",
+      "bytes": 24216
+    },
+    {
+      "file": "comms-marketing-05.json",
+      "sha256": "8fcee014cebb95816d06152cf8a4dfc440893682e53683ffcd58a18e00191a32",
+      "bytes": 24960
+    },
+    {
+      "file": "comms-marketing-06.json",
+      "sha256": "ae53e5486929f18dc1efb998c2834949a7dbe0cb5f062b5b27075f95996646a9",
+      "bytes": 38673
+    },
+    {
+      "file": "comms-marketing-07.json",
+      "sha256": "44a7c4e2eb5e0578921a6af96d9e69a15590bf3af8c9dbdb43fbdcf5b7cbe4c2",
+      "bytes": 37624
+    },
+    {
+      "file": "comms-marketing-08.json",
+      "sha256": "256c70455fb54f28d1171bf09dd020d04efb26b2b4d8a4b1aab8278529c238d3",
+      "bytes": 20551
+    },
+    {
+      "file": "comms-marketing-09.json",
+      "sha256": "ffa086508eb63e0501ba5a451888e85842a22c0e83d46dfa35d6b766e7cedecc",
+      "bytes": 23308
+    },
+    {
+      "file": "comms-marketing-10.json",
+      "sha256": "70ed7917b77823ff29cdd58b23c4b99961ae8be298df21a8ac35d181109e6c62",
+      "bytes": 21751
+    },
+    {
+      "file": "comms-marketing-audit-01.json",
+      "sha256": "e56c2045cb89902c251cf19965b254ac530e7da8953497043035fab0fdcbdfb3",
+      "bytes": 21251
+    },
+    {
+      "file": "comms-marketing-audit-02.json",
+      "sha256": "2d3d05697cafce4bfb3f5050d823468e3333dfac79789a69c4719b05030c9e6c",
+      "bytes": 30143
+    },
+    {
+      "file": "comms-marketing-audit-03.json",
+      "sha256": "dbc7dca2bad028155f2848f569d98a5dc2cfc11b7d4a1e71e9f5089489d18904",
+      "bytes": 32565
+    },
+    {
+      "file": "comms-marketing-audit-04.json",
+      "sha256": "013e820f54c29571ddd2cef10b6afbc25c7d655efe4222eb7f85fcfb24b83fd8",
+      "bytes": 14007
+    },
+    {
+      "file": "comms-marketing-audit-05.json",
+      "sha256": "6227836016a107d406e28de3d1139bc6c3057138bd86c9ee5def3641e52a6efa",
+      "bytes": 25080
+    },
+    {
+      "file": "comms-marketing-audit-06.json",
+      "sha256": "1271fe8aeadbbf3839cc32540dee7b137e34c8c1201b8b3c9b71bc68fc0ed0e2",
+      "bytes": 27972
+    },
+    {
+      "file": "comms-marketing-extra-01.json",
+      "sha256": "f84dc87c673a4f10e0dc4c7fc51a4747e6ee3e4bdd040b1038c9e3fb1893db3d",
+      "bytes": 22052
+    },
+    {
+      "file": "comms-marketing-extra-02.json",
+      "sha256": "19b30655f9f6a702e02f3576889198e2c2be7e2fb74aa59a020f5c83b06ca1e2",
+      "bytes": 27921
+    },
+    {
+      "file": "cross-review01-details.json",
+      "sha256": "dab4fef930490c9759cf124453dffdc64c7cdcd4ae1a3a131b8f42ceb0715c51",
+      "bytes": 32221
+    },
+    {
+      "file": "cross-review01-discovery.json",
+      "sha256": "7a31ff1065de12669318603c91234350ad462e93cc1dd9797b49a8052ad64462",
+      "bytes": 38635
+    },
+    {
+      "file": "cross-review01-documents.json",
+      "sha256": "f68b694df6db4dffa05967cbee5349bf1a7170ec899decd2bcee4c7a7c0064a0",
+      "bytes": 31371
+    },
+    {
+      "file": "cross-review01-extra-intercom.json",
+      "sha256": "312c07de5cd7b5fa9855e1d556d6625e05d3a330abe2a6948fd2166f9cb2dd9e",
+      "bytes": 21349
+    },
+    {
+      "file": "cross-review01-twenty-pylon.json",
+      "sha256": "27ebedbe4e665527c3950e4a41d26245b6afc6171cda338a6f3e03af4d8d888c",
+      "bytes": 26948
+    },
+    {
+      "file": "cross-review21-01.json",
+      "sha256": "b127bb71dc5a18e6f3e6f8cadf1f09fdad36ecdd58c58b10b2aac1e443cc3e5f",
+      "bytes": 27746
+    },
+    {
+      "file": "cross-review21-02.json",
+      "sha256": "b0ca3ebd840bc1063c0bf4f96401db34a93b3b4e31838c13998fced6d6def138",
+      "bytes": 29990
+    },
+    {
+      "file": "cross-review21-03.json",
+      "sha256": "f492fb146c3c7a53316dba52223592d7c3bfdf90f65e9df91bba84b1efb8ee0b",
+      "bytes": 30350
+    },
+    {
+      "file": "cross-review21-04.json",
+      "sha256": "d0760d636fee43b7f363b2e2e5c6cf2d7e95a856d0718e9693f61a368643f7bf",
+      "bytes": 36800
+    },
+    {
+      "file": "cross-review21-05.json",
+      "sha256": "a4a7a76e2d03946d7781c976ecc43f89be45ba3f35a200eade230e982dd5b8e0",
+      "bytes": 38943
+    },
+    {
+      "file": "cross-review61-01.json",
+      "sha256": "8224a8651ab1e3a90533dc5b57d5a6717ba2038edc30ba5e8f3ce6afa94bc859",
+      "bytes": 25055
+    },
+    {
+      "file": "cross-review61-02.json",
+      "sha256": "1e9a9c2cdedbf9010c1b918925929b68138a94efcd86f48fcf9687df5b909588",
+      "bytes": 30280
+    },
+    {
+      "file": "cross-review61-03.json",
+      "sha256": "cd0d41659c37e54e36074d5aa9e0ae7a15b01d8b5a2a0d95f0d5fd1401074095",
+      "bytes": 35335
+    },
+    {
+      "file": "cross-review61-04.json",
+      "sha256": "7aa8e0356c7a1bfe098df6f64c62cdf705f811270c2003726ed05a7e8372d531",
+      "bytes": 30721
+    },
+    {
+      "file": "cross-review81-01.json",
+      "sha256": "3150f9ec882a9da90fe4d8f67d1fa613e8fe8ee4c3b56f72248f1a2e317031ed",
+      "bytes": 27342
+    },
+    {
+      "file": "cross-review81-02.json",
+      "sha256": "c335f267c701dc58a48be31319ff54879c953a2b7522b029441a80dbd0d2f7b9",
+      "bytes": 30000
+    },
+    {
+      "file": "cross-review81-03.json",
+      "sha256": "778f48855e202418c3cab82bf0b0b429fca85859ede1407d1b1bc12a5bb6ff66",
+      "bytes": 27998
+    },
+    {
+      "file": "cross-review81-04.json",
+      "sha256": "3eade94ad08ed36faf63ffd93285b79c5c12087d093ec422eefeb91eed8b177c",
+      "bytes": 30290
+    },
+    {
+      "file": "cross-review81-05.json",
+      "sha256": "1b7a152d1037a52e0d1a87bb5a65c9cde28c7f5ec07ce2215ac1e4c00c380393",
+      "bytes": 36853
+    },
+    {
+      "file": "cross-review81-06.json",
+      "sha256": "0545b236cffa002cfda04fdfd079ff7f1ba83612e6120aaa631d9e8eb2cc1f4f",
+      "bytes": 1670
+    },
+    {
+      "file": "cross-review81-07.json",
+      "sha256": "b36f5498fe1ec37368602470aa92065d1a354da15a30273f34769011d534dc66",
+      "bytes": 9953
+    },
+    {
+      "file": "delegated-final-checks.json",
+      "sha256": "89a4012d9e782e3ad83ab0f29805a554025c0f824e047aa5d75411711344b3a5",
+      "bytes": 29567
+    },
+    {
+      "file": "dev-productivity-01.json",
+      "sha256": "052450a698421bac19144132d446b1033451e43d07e21cefccdf7aace6eef63d",
+      "bytes": 37446
+    },
+    {
+      "file": "dev-productivity-02.json",
+      "sha256": "169473e274c9be9b01a2901671286e12d97ee4caf1d69fb0f4bf259c2ae2389d",
+      "bytes": 36356
+    },
+    {
+      "file": "dev-productivity-03.json",
+      "sha256": "dabeb4ebb31926066a0d55c3b8e9c8378b92031c8ef49f25d3264c95e8db6ec2",
+      "bytes": 32297
+    },
+    {
+      "file": "dev-productivity-04.json",
+      "sha256": "94b86fe0539bfa2bf255916f2c4746ff424af15c373eaa4a3984df91e1ab560d",
+      "bytes": 27677
+    },
+    {
+      "file": "dev-productivity-05.json",
+      "sha256": "f9a808b99b0e4d0b1da4843c7acabe30b30fcd6b8c36ea3a5148e23eceeb4125",
+      "bytes": 23742
+    },
+    {
+      "file": "dev-productivity-06.json",
+      "sha256": "3a9d74d1c423b6314eb652e01dd341aebe53dd213cbc12afc6c4efb2b70f765b",
+      "bytes": 38080
+    },
+    {
+      "file": "dev-productivity-07.json",
+      "sha256": "ecc44d26f9564bb0030ba8d7e82e86eed4afefc2727213ee4ed51e4f2b1da787",
+      "bytes": 29564
+    },
+    {
+      "file": "dev-productivity-08.json",
+      "sha256": "283ed5f72910af130dd62eaf817d6e79691d367c2497f50a3f54d7ff83a5f06b",
+      "bytes": 16563
+    },
+    {
+      "file": "dev-productivity-09.json",
+      "sha256": "263fe9ffe82ab44e97d44685e9c34eddbf017622dbd256bbb764b29a6a812807",
+      "bytes": 29541
+    },
+    {
+      "file": "dev-productivity-10.json",
+      "sha256": "7541441f3afb95e03f7760687dbd5ad31404912d9f07f54f608e97e522b2aeca",
+      "bytes": 28401
+    },
+    {
+      "file": "dev-productivity-audit01.json",
+      "sha256": "9ee783864e8ac1f02691276815fecf585d91e406a497d6c16554f56538cf1782",
+      "bytes": 27259
+    },
+    {
+      "file": "dev-productivity-audit02.json",
+      "sha256": "2183adb12e6885e36d86a59d97eec22a51148ce5b69f61368c101733e1e3e8ab",
+      "bytes": 29779
+    },
+    {
+      "file": "dev-productivity-audit03.json",
+      "sha256": "7d7cb8175ca42e042a6e0886e41339d2cc1adca527b2f0b711aab291ca2e74dd",
+      "bytes": 29948
+    },
+    {
+      "file": "dev-productivity-audit04.json",
+      "sha256": "c98a9426dd425c5dc4545eaf75af9f479953ce3d72c92b557d927bdd9e2804fb",
+      "bytes": 28861
+    },
+    {
+      "file": "dev-productivity-audit05.json",
+      "sha256": "9e864c7702142d7a39bb1429f37d5f291d83bc80b8350be99321af046e91e926",
+      "bytes": 14902
+    },
+    {
+      "file": "discovery-01.json",
+      "sha256": "db5e072da563d169c7ff549e4bf209dba5da7b736ffe82cb349966de8aa332e6",
+      "bytes": 38598
+    },
+    {
+      "file": "discovery-02.json",
+      "sha256": "3cac674353472ed7789f775c070260a5c9e674346d46667bc1ea8b4c6b542445",
+      "bytes": 35112
+    },
+    {
+      "file": "discovery-03.json",
+      "sha256": "803b48a8fbb20fd48aef028a6ee309a4380d5500a85d642d474eeefd6f36d1e3",
+      "bytes": 37261
+    },
+    {
+      "file": "discovery-04.json",
+      "sha256": "8906ccc6969f1d3b562982f2899e2f4b4ec9d7ba82586350b65ea00286cf158c",
+      "bytes": 24810
+    },
+    {
+      "file": "discovery-05.json",
+      "sha256": "a40c9e9aef4861acd8073e95ffd7df47e988bc2726f1ec32d80b8b659b2e2dc3",
+      "bytes": 17929
+    },
+    {
+      "file": "discovery-06.json",
+      "sha256": "ca854189c17b825ff29da2a9464e7224091eab6aa634233d97117e4b9372d411",
+      "bytes": 22617
+    },
+    {
+      "file": "discovery-07.json",
+      "sha256": "2c1aaeff509a4bfe9c7dc8f4824d948f6f3dce563c744b3b86ab1a153ce56d91",
+      "bytes": 32255
+    },
+    {
+      "file": "discovery-08.json",
+      "sha256": "e9a05d5eb43fa5549eed37c674ce8f12e7a4b4922015e5ea6fb31d1653016cfa",
+      "bytes": 34728
+    },
+    {
+      "file": "discovery-09.json",
+      "sha256": "5cb13381f7da57e7dfcc1b63d974dc963347216e4f31536c3becf078496d6985",
+      "bytes": 32824
+    },
+    {
+      "file": "discovery-10.json",
+      "sha256": "cd0d553d346706d63fbe29aca47a02b225918b187f357e70bdaecda6028fd7f7",
+      "bytes": 39405
+    },
+    {
+      "file": "discovery-11.json",
+      "sha256": "d4030840d57b413d96e9958bd532741efccf30232ee2c5e443fcb73795ebc6f4",
+      "bytes": 10136
+    },
+    {
+      "file": "finance-ai-01.json",
+      "sha256": "07059dcbede4f4adc6b994909a6264b4561687b64886331b23a003ae2ce711cb",
+      "bytes": 28663
+    },
+    {
+      "file": "finance-ai-02.json",
+      "sha256": "3d97c48ff47fa3f9a43e97d1c61d9884b36c6c1cb57005a4807db0a9fe7c440c",
+      "bytes": 26791
+    },
+    {
+      "file": "finance-ai-03.json",
+      "sha256": "8ab986adabf6ec1e9841206d23ef50e52c166f1480c9ba8c86226e23b8614318",
+      "bytes": 34641
+    },
+    {
+      "file": "finance-ai-04.json",
+      "sha256": "002ee4cfe029e0f9ea75bfd01ced93e663aa42c6e60d6337d36a9748065c5cf7",
+      "bytes": 25462
+    },
+    {
+      "file": "finance-ai-05.json",
+      "sha256": "fdd87b0067409cee5846fd0e0877af4982b6aa060108aa95c89231dbcbdf48f2",
+      "bytes": 28109
+    },
+    {
+      "file": "finance-ai-06.json",
+      "sha256": "54fa9a058445d448b81c0cd3c1f9e9ad65ea996777cffa54feffcac505b3f3f6",
+      "bytes": 23833
+    },
+    {
+      "file": "finance-ai-07.json",
+      "sha256": "0ad2030c6244412b5c8ff3187959c8a793474a8f42737768b39b722b46f59e93",
+      "bytes": 22576
+    },
+    {
+      "file": "finance-ai-08.json",
+      "sha256": "b8be389f78f64028a7bda3ff76c9e93224ef2f82e7a1f7c69a51faef2edc8489",
+      "bytes": 34421
+    },
+    {
+      "file": "finance-ai-09.json",
+      "sha256": "f9b0e899474ee276c9a8005216dac780e7c25984fbafe53c50927e634c0ca3d7",
+      "bytes": 28988
+    },
+    {
+      "file": "finance-ai-10.json",
+      "sha256": "dfdcb7c65b84ead008ec5622cb84bd3fbd17e6fdc9b0288865872aeab0f0d05f",
+      "bytes": 31187
+    },
+    {
+      "file": "finance-ai-11.json",
+      "sha256": "f6e41d72d43c2a3a4a56bcef67edb187795e21f0f8ae7ece77db54665757873f",
+      "bytes": 23311
+    },
+    {
+      "file": "finance-ai-audit-01.json",
+      "sha256": "b3825bc0b8d50c384702abe35dd3b3a50237825dd1fc96fc7030631948a8de49",
+      "bytes": 33120
+    },
+    {
+      "file": "finance-ai-audit-02.json",
+      "sha256": "e95da706fe247b370f3340f7a9bb2344d7949082a6eb47c790ab2d240385141e",
+      "bytes": 29011
+    },
+    {
+      "file": "finance-ai-audit-03.json",
+      "sha256": "a2da46597f7bf019cc7cbfcdad18ba465a4faf160838c23f86c58cf958d24de8",
+      "bytes": 30579
+    },
+    {
+      "file": "finance-ai-audit-04.json",
+      "sha256": "b5f9033e07380ae5387a69539e1fd054a8550027845a03213fadc77e7f17efff",
+      "bytes": 31824
+    },
+    {
+      "file": "finance-ai-audit-05.json",
+      "sha256": "31678560cd3f07e5a1412115231346baf912ed24c922793f158e610064e1ff32",
+      "bytes": 25060
+    },
+    {
+      "file": "finance-ai-supplement-01.json",
+      "sha256": "1200f19686297c9e856de66036ca5c72f82797ac8eb10a4face8bb691d9d104b",
+      "bytes": 373
+    },
+    {
+      "file": "pumble-scope-followup.json",
+      "sha256": "f1821911ff7beb9ce76a058c590dd57451d64cced5b9551961636463ed1ff520",
+      "bytes": 11273
+    }
+  ],
+  "note": "Full vendor-document extracts are not redistributed. Notes and field-bound primary links remain in the dataset."
+}
